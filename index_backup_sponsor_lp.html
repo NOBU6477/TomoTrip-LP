@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- TODO: Replace with actual page title -->
+  <title>TomoTrip（旅友） - あなたの街が仕事場になる | 地元ガイド募集</title>
+  
+  <!-- TODO: Update meta description with final copy -->
+  <meta name="description" content="TomoTrip（旅友）で地元ガイドとして活躍しませんか？学生・夜職・観光関連の副業に最適。好きな時間に、あなたの街を案内して収入を得られます。LINEで1分登録。">
+  
+  <!-- OGP Tags - TODO: Replace URLs and image paths -->
+  <meta property="og:title" content="TomoTrip（旅友） - あなたの街が仕事場になる">
+  <meta property="og:description" content="地元ガイドで、好きな時間に収入を。学生・夜職・観光関連の副業に◎">
+  <meta property="og:image" content="https://yourdomain.com/assets/images/og.jpg">
+  <meta property="og:url" content="https://yourdomain.com">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="TomoTrip">
+  
+  <!-- Twitter Card - TODO: Replace with actual URLs -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="TomoTrip（旅友） - あなたの街が仕事場になる">
+  <meta name="twitter:description" content="地元ガイドで、好きな時間に収入を。学生・夜職・観光関連の副業に◎">
+  <meta name="twitter:image" content="https://yourdomain.com/assets/images/og.jpg">
+  
+  <!-- Favicon - TODO: Replace with actual favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+  
+  <!-- Web App Manifest -->
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#00A3C4">
+  
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/src/styles.css">
+  
+  <!-- Structured Data - JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "TomoTrip",
+    "url": "https://yourdomain.com",
+    "description": "地元ガイドマッチングプラットフォーム",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://yourdomain.com/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "TomoTrip",
+    "url": "https://yourdomain.com",
+    "logo": "https://yourdomain.com/assets/images/logo.png",
+    "sameAs": [
+      "https://twitter.com/tomotrip",
+      "https://www.facebook.com/tomotrip",
+      "https://www.instagram.com/tomotrip"
+    ]
+  }
+  </script>
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "未経験でもガイドになれますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "はい、問題ありません。TomoTripでは、地元の知識や魅力を伝える熱意があれば、どなたでもガイドとして活躍できます。専門的な資格や経験は不要です。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "時間の縛りはありますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "いいえ、時間の縛りはありません。あなたの都合の良い時間にプランを設定でき、自由なスケジュールで働けます。副業や隙間時間の活用に最適です。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "英語ができなくても大丈夫ですか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "はい、大丈夫です。日本語のみのガイドも多数活躍しています。国内旅行者や日本語を学ぶ外国人観光客向けのプランも人気です。"
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Skip to main content for accessibility -->
+  <a href="#main-content" class="skip-link" data-testid="link-skip-to-main">メインコンテンツへスキップ</a>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero__overlay"></div>
+    <a href="#hero" class="hero__logo-link" data-testid="link-hero-logo">
+      <img src="/tomotrip-logo.png" alt="TomoTrip" class="hero__logo">
+    </a>
+    <div class="hero__content container">
+      <h1 class="hero__title" data-i18n="hero.title" data-testid="text-hero-title">
+        あなたの街が<br>"仕事場"になる。
+      </h1>
+      <p class="hero__subtitle" data-i18n="hero.subtitle" data-testid="text-hero-subtitle">
+        TomoTrip（旅友）— 地元ガイドで、好きな時間に収入を。
+      </p>
+      
+      <div class="hero__cta">
+        <button class="btn btn--primary btn--large" data-testid="button-line-register-hero" id="openLineModalBtn">
+          <svg class="btn__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314" fill="currentColor"/>
+          </svg>
+          LINEで登録する
+          <span class="btn__subtitle">ガイド・観光客・協賛店</span>
+        </button>
+        <button class="btn btn--ghost btn--large" data-testid="button-watch-video" id="openVideoModalBtn">
+          <svg class="btn__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 5v14l11-7z" fill="currentColor"/>
+          </svg>
+          30秒で見る
+          <span class="btn__subtitle">サービス紹介動画</span>
+        </button>
+      </div>
+      
+      <div class="hero__badges" data-i18n="hero.badges">
+        <span class="badge" data-testid="badge-target">
+          <svg class="badge__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="currentColor"/>
+          </svg>
+          年齢制限なし・あらゆる属性が活躍中
+        </span>
+        <span class="badge" data-testid="badge-fee">
+          <svg class="badge__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="currentColor"/>
+          </svg>
+          最低¥6,000~/セッション保証
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    
+    <!-- Benefits Section -->
+    <section class="section section--light" id="benefits">
+      <div class="container">
+        <h2 class="section__title" data-i18n="benefits.title" data-testid="text-benefits-title">
+          TomoTripで始める、<br class="mobile-break">新しい働き方
+        </h2>
+        
+        <div class="benefits-grid">
+          <div class="benefit-card" data-testid="card-benefit-1">
+            <div class="benefit-card__icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                <path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="benefit-card__title" data-i18n="benefits.freedom.title">自由な働き方</h3>
+            <p class="benefit-card__description" data-i18n="benefits.freedom.desc">
+              あなたの都合に合わせて、好きな時間・好きな場所でガイドができます。本業の合間や週末だけでもOK。
+            </p>
+          </div>
+          
+          <div class="benefit-card" data-testid="card-benefit-2">
+            <div class="benefit-card__icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2L2 7l10 5 10-5-10-5z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="benefit-card__title" data-i18n="benefits.knowledge.title">地元の知識が価値に</h3>
+            <p class="benefit-card__description" data-i18n="benefits.knowledge.desc">
+              特別なスキルは不要。あなたが普段から知っている街の魅力やお店が、旅行者にとって貴重な情報になります。
+            </p>
+          </div>
+          
+          <div class="benefit-card" data-testid="card-benefit-3">
+            <div class="benefit-card__icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="benefit-card__title" data-i18n="benefits.community.title">地域に貢献</h3>
+            <p class="benefit-card__description" data-i18n="benefits.community.desc">
+              観光客を地元のお店や名所に案内することで、地域経済の活性化に貢献。街の魅力を広める仕事です。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="section" id="how-it-works">
+      <div class="container">
+        <h2 class="section__title" data-i18n="howItWorks.title" data-testid="text-how-it-works-title">
+          簡単3ステップで始められる
+        </h2>
+        
+        <div class="steps-grid">
+          <div class="step-card" data-testid="card-step-1">
+            <div class="step-card__number">1</div>
+            <div class="step-card__image-container">
+              <img src="/step1.png" alt="LINEで登録" class="step-card__image" loading="lazy" data-testid="img-step-1">
+            </div>
+            <h3 class="step-card__title" data-i18n="howItWorks.step1.title">LINEで登録</h3>
+            <p class="step-card__description" data-i18n="howItWorks.step1.desc">
+              LINEの友だち追加から、わずか1分で登録完了。簡単なプロフィールを入力するだけです。
+            </p>
+          </div>
+          
+          <div class="step-card" data-testid="card-step-2">
+            <div class="step-card__number">2</div>
+            <div class="step-card__image-container">
+              <img src="/step2.png" alt="プランを作成" class="step-card__image" loading="lazy" data-testid="img-step-2">
+            </div>
+            <h3 class="step-card__title" data-i18n="howItWorks.step2.title">プランを作成</h3>
+            <p class="step-card__description" data-i18n="howItWorks.step2.desc">
+              あなたのおすすめスポットや時間帯を設定。カフェ巡り、夜の街案内など、自由にプランを組み立てられます。
+            </p>
+          </div>
+          
+          <div class="step-card" data-testid="card-step-3">
+            <div class="step-card__number">3</div>
+            <div class="step-card__image-container">
+              <img src="/step3.png" alt="予約が入る" class="step-card__image" loading="lazy" data-testid="img-step-3">
+            </div>
+            <h3 class="step-card__title" data-i18n="howItWorks.step3.title">予約が入る</h3>
+            <p class="step-card__description" data-i18n="howItWorks.step3.desc">
+              旅行者から予約が入ったら、あとは当日に案内するだけ。報酬は自動で計算され、アプリで管理できます。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Audience Tabs Section -->
+    <section class="section section--light" id="audience">
+      <div class="container">
+        <h2 class="section__title" data-i18n="audience.title" data-testid="text-audience-title">
+          あなたに合った働き方を見つけよう
+        </h2>
+        
+        <div class="tabs" role="tablist" aria-label="ガイド対象セグメント" data-testid="tablist-audience">
+          <button class="tab" role="tab" aria-selected="true" aria-controls="panel-student" id="tab-student" data-audience="student" data-testid="tab-student">
+            学生向け
+          </button>
+          <button class="tab" role="tab" aria-selected="false" aria-controls="panel-night" id="tab-night" data-audience="night" data-testid="tab-night">
+            夜職向け
+          </button>
+          <button class="tab" role="tab" aria-selected="false" aria-controls="panel-homemaker" id="tab-homemaker" data-audience="homemaker" data-testid="tab-homemaker">
+            主婦・個人事業主向け
+          </button>
+          <button class="tab" role="tab" aria-selected="false" aria-controls="panel-pro" id="tab-pro" data-audience="pro" data-testid="tab-pro">
+            観光事業者向け
+          </button>
+        </div>
+        
+        <div class="tab-panels">
+          <!-- Student Panel -->
+          <div class="tab-panel" role="tabpanel" id="panel-student" aria-labelledby="tab-student" data-testid="panel-student">
+            <div class="tab-panel__content">
+              <div class="tab-panel__main">
+                <h3 class="tab-panel__title" data-i18n="audience.student.title">
+                  学んだスキルを収入に。授業の合間が仕事場になる
+                </h3>
+                <p class="tab-panel__text" data-i18n="audience.student.desc">
+                  語学力、デザインスキル、IT知識、地域研究の成果——大学で学んだことが全て観光資源に。「国際交流サークルで培った英会話」「建築学科で学んだ街並み解説」「地元史の研究成果を活かしたディープツアー」など、あなたの専門性が旅行者の特別な思い出になります。最低¥6,000/セッション〜で、自由に料金設定も可能です。
+                </p>
+                <ul class="tab-panel__features">
+                  <li data-i18n="audience.student.feature1">
+                    <svg class="feature-icon" width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="currentColor"/>
+                    </svg>
+                    最低¥6,000/セッション保証、設定次第で時給換算¥3,000〜¥6,000+も可能
+                  </li>
+                  <li data-i18n="audience.student.feature2">
+                    <svg class="feature-icon" width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="currentColor"/>
+                    </svg>
+                    語学・専門知識・サークル活動の成果が全て収入源に
+                  </li>
+                  <li data-i18n="audience.student.feature3">
+                    <svg class="feature-icon" width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="currentColor"/>
+                    </svg>
+                    空きコマ・放課後・週末だけOK。就活でアピールできる実績にも
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="tab-panel__faq">
+                <h4 class="tab-panel__faq-title">よくある質問</h4>
+                <details class="faq-item" data-testid="faq-student-1">
+                  <summary class="faq-item__question">
+                    学業との両立は可能ですか？
+                    <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </summary>
+                  <div class="faq-item__answer">
+                    はい、完全に可能です。プランの受付時間や曜日は自由に設定できるため、試験期間中は休止するなど、柔軟に調整できます。多くの学生ガイドが無理なく活動しています。
+                  </div>
+                </details>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Night Work Panel -->
+          <div class="tab-panel" role="tabpanel" id="panel-night" aria-labelledby="tab-night" hidden data-testid="panel-night">
+            <div class="tab-panel__content">
+              <div class="tab-panel__main">
+                <h3 class="tab-panel__title" data-i18n="audience.night.title">
+                  出勤前のひと仕事が、新しい収入に。夜の街を昼も夜も案内
+                </h3>
+                <p class="tab-panel__text" data-i18n="audience.night.desc">
+                  「出勤前の夕方に2時間だけガイド→そのまま同伴出勤」「お昼は居酒屋でランチ案内、夜は本業」——TomoTripなら、あなたの生活スタイルに合わせた働き方が実現します。夜の街に詳しいあなただからこそ案内できる、隠れ家バー・おしゃれなディナースポット・ナイトクラブ情報は、大人の旅行者に大人気。居酒屋で一緒にお酒を楽しむプランや、ナイトライフ体験ツアーなど、他にはない価値を提供できます。最低¥6,000/セッション〜、夜の案内なら更に高単価も。
+                </p>
+                <ul class="tab-panel__features">
+                  <li data-i18n="audience.night.feature1">
+                    <svg class="feature-icon" width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="currentColor"/>
+                    </svg>
+                    出勤前ガイド→同伴出勤も可。居酒屋で一緒にお酒を楽しむプランも人気
+                  </li>
+                  <li data-i18n="audience.night.feature2">
+                    <svg class="feature-icon" width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="currentColor"/>
+                    </svg>
+                    最低¥6,000/セッション〜、ナイトライフ案内は時給換算¥4,000〜¥8,000+も
+                  </li>
+                  <li data-i18n="audience.night.feature3">
+                    <svg class="feature-icon" width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="currentColor"/>
+                    </svg>
+                    磨き抜かれた接客スキルと夜の街の知識が最大の武器
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="tab-panel__faq">
+                <h4 class="tab-panel__faq-title">よくある質問</h4>
+                <details class="faq-item" data-testid="faq-night-1">
+                  <summary class="faq-item__question">
+                    身バレの心配はありませんか？
+                    <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </summary>
+                  <div class="faq-item__answer">
+                    プロフィールの公開範囲は自由に設定できます。顔写真なしでの登録や、ニックネームでの活動も可能です。プライバシー保護を最優先に設計されています。
+                  </div>
+                </details>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Homemaker / Freelancer Panel -->
+          <div class="tab-panel" role="tabpanel" id="panel-homemaker" aria-labelledby="tab-homemaker" hidden data-testid="panel-homemaker">
+            <div class="tab-panel__content">
+              <div class="tab-panel__main">
+                <h3 class="tab-panel__title" data-i18n="audience.homemaker.title">
+                  日常が観光資源に。主婦・個人事業主の新しい収入源
+                </h3>
+                <p class="tab-panel__text" data-i18n="audience.homemaker.desc">
+                  「地元のスーパーでの買い物ツアー」「子育てママの公園案内」「商店街の名店めぐり」「自宅サロンと組み合わせた街歩き」——普段の生活で培った地域の知識が、観光客にとっては特別な体験に。年齢制限なし、誰でも参加できます。個人事業主の方なら、本業と組み合わせた独自プランも作れます。「陶芸体験+窯元めぐり」「美容師が案内する美容スポット巡り」など、あなたの専門性×地元愛が新しい価値を生み出します。最低¥6,000/セッション〜で、すき間時間を収入に変えましょう。
+                </p>
+                <ul class="tab-panel__features">
+                  <li data-i18n="audience.homemaker.feature1">
+                    <svg class="feature-icon" width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="currentColor"/>
+                    </svg>
+                    日常の買い物・子育て・趣味が全て収入源に。最低¥6,000/セッション〜
+                  </li>
+                  <li data-i18n="audience.homemaker.feature2">
+                    <svg class="feature-icon" width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="currentColor"/>
+                    </svg>
+                    個人事業と組み合わせて新しい顧客獲得チャンスにも
+                  </li>
+                  <li data-i18n="audience.homemaker.feature3">
+                    <svg class="feature-icon" width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="currentColor"/>
+                    </svg>
+                    年齢制限なし。子育て中、シニアの方も大歓迎
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="tab-panel__faq">
+                <h4 class="tab-panel__faq-title">よくある質問</h4>
+                <details class="faq-item" data-testid="faq-homemaker-1">
+                  <summary class="faq-item__question">
+                    特別なスキルがなくても大丈夫ですか？
+                    <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </summary>
+                  <div class="faq-item__answer">
+                    はい、大丈夫です。「地元のスーパーでの買い物の仕方」「近所の公園で子供が喜ぶ遊び方」など、日常の何気ない体験が観光客にとっては貴重な思い出になります。あなたの日常が誰かの特別な体験になるのです。
+                  </div>
+                </details>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Tourism Pro Panel -->
+          <div class="tab-panel" role="tabpanel" id="panel-pro" aria-labelledby="tab-pro" hidden data-testid="panel-pro">
+            <div class="tab-panel__content">
+              <div class="tab-panel__main">
+                <h3 class="tab-panel__title" data-i18n="audience.pro.title">
+                  プロのスキルで、さらなる収益を。観光を本業にする道も
+                </h3>
+                <p class="tab-panel__text" data-i18n="audience.pro.desc">
+                  通訳案内士、観光業従事者、旅行会社勤務の方——あなたの専門性がそのまま高単価の収入に。「英語で案内する本格的な文化体験ツアー」「企業向けのチームビルディング観光」「外国人VIP対応」など、プロフェッショナルならではの質の高いサービスを提供できます。最低¥6,000/セッション〜ですが、専門ガイドとして時給換算¥5,000〜¥10,000+も十分可能。本業との相乗効果で、新しいキャリアの可能性も広がります。
+                </p>
+                <ul class="tab-panel__features">
+                  <li data-i18n="audience.pro.feature1">
+                    <svg class="feature-icon" width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="currentColor"/>
+                    </svg>
+                    専門ガイドとして時給換算¥5,000〜¥10,000+。企業向け高単価案件も
+                  </li>
+                  <li data-i18n="audience.pro.feature2">
+                    <svg class="feature-icon" width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="currentColor"/>
+                    </svg>
+                    通訳案内士・観光業の実績がそのまま信頼と収益に
+                  </li>
+                  <li data-i18n="audience.pro.feature3">
+                    <svg class="feature-icon" width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="currentColor"/>
+                    </svg>
+                    法人アカウントで既存事業との相乗効果も創出可能
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="tab-panel__faq">
+                <h4 class="tab-panel__faq-title">よくある質問</h4>
+                <details class="faq-item" data-testid="faq-pro-1">
+                  <summary class="faq-item__question">
+                    既存の事業との兼ね合いは？
+                    <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </summary>
+                  <div class="faq-item__answer">
+                    TomoTripは個人ガイドのプラットフォームですが、法人アカウントでの登録も可能です。既存の観光事業との相乗効果を生み出せます。詳しくは法人向けプランをご確認ください。
+                  </div>
+                </details>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Compensation & Trust Section -->
+    <section class="section" id="compensation">
+      <div class="container">
+        <h2 class="section__title" data-i18n="compensation.title" data-testid="text-compensation-title">
+          報酬と安心のサポート体制
+        </h2>
+        
+        <div class="compensation-grid">
+          <div class="compensation-card">
+            <div class="compensation-card__header">
+              <h3 class="compensation-card__title" data-i18n="compensation.earnings.title">報酬の目安</h3>
+            </div>
+            <div class="compensation-card__content">
+              <div class="price-highlight" data-testid="text-price-highlight">
+                <span class="price-highlight__amount">¥3,000</span>
+                <span class="price-highlight__unit">/1時間〜</span>
+              </div>
+              <p class="compensation-card__text" data-i18n="compensation.earnings.desc">
+                報酬はプランの内容や所要時間によって変動します。人気ガイドになれば、時給¥5,000以上も可能です。
+              </p>
+            </div>
+          </div>
+          
+          <div class="compensation-card">
+            <div class="compensation-card__header">
+              <h3 class="compensation-card__title" data-i18n="compensation.safety.title">安心の仕組み</h3>
+            </div>
+            <div class="compensation-card__content">
+              <ul class="safety-features">
+                <li data-i18n="compensation.safety.verification">
+                  <svg class="feature-icon" width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 0L2 3v4c0 3.866 2.686 7.479 6 8 3.314-.521 6-4.134 6-8V3L8 0z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                    <path d="M6 8l1.5 1.5L11 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                  </svg>
+                  本人確認で安全性を担保
+                </li>
+                <li data-i18n="compensation.safety.review">
+                  <svg class="feature-icon" width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 1l2.163 4.382L15 6.097l-3.5 3.41.826 4.818L8 12.434l-4.326 2.272.826-4.818L1 6.097l4.837-.715L8 1z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                  </svg>
+                  レビューシステムで信頼構築
+                </li>
+                <li data-i18n="compensation.safety.guidelines">
+                  <svg class="feature-icon" width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 4h12M2 8h12M2 12h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                  </svg>
+                  ガイドライン完備でトラブル防止
+                </li>
+                <li data-i18n="compensation.safety.payment">
+                  <svg class="feature-icon" width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="1" y="3" width="14" height="10" rx="2" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                    <path d="M1 7h14" stroke="currentColor" stroke-width="1.5"/>
+                  </svg>
+                  清算はアプリで自動管理
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Early Adopter Campaign Section -->
+    <section class="section section--accent" id="campaign">
+      <div class="container">
+        <div class="campaign-content">
+          <div class="campaign-badge" data-testid="badge-limited">
+            <svg class="campaign-badge__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 2l2.09 6.44h6.77l-5.48 3.98 2.09 6.44L10 14.88l-5.47 3.98 2.09-6.44-5.48-3.98h6.77L10 2z" fill="currentColor"/>
+            </svg>
+            先着50名限定
+          </div>
+          
+          <h2 class="campaign-title" data-i18n="campaign.title" data-testid="text-campaign-title">
+            先行モニター大募集
+          </h2>
+          
+          <p class="campaign-description" data-i18n="campaign.desc">
+            TomoTripのサービス向上のため、先行モニターガイドを募集しています。<br>
+            今すぐ登録すると、特別な特典をご用意！
+          </p>
+          
+          <div class="campaign-benefits">
+            <div class="campaign-benefit campaign-benefit--guide" data-testid="card-bonus-1">
+              <div class="campaign-benefit__icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <circle cx="12" cy="7" r="4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="campaign-benefit__content">
+                <div class="campaign-benefit__title" data-i18n="campaign.bonus1.title">
+                  初回ガイド完了で
+                </div>
+                <div class="campaign-benefit__amount" data-testid="text-bonus-amount-1">¥3,000</div>
+                <div class="campaign-benefit__subtitle" data-i18n="campaign.bonus1.subtitle">
+                  ボーナス進呈
+                </div>
+                <p class="campaign-benefit__detail">
+                  観光客とマッチングして案内が終了した段階でお支払い<span class="campaign-benefit__note">※条件あり</span>
+                </p>
+              </div>
+            </div>
+            
+            <div class="campaign-benefit campaign-benefit--sponsor" data-testid="card-bonus-2">
+              <div class="campaign-benefit__icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <polyline points="3.27 6.96 12 12.01 20.73 6.96" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <line x1="12" y1="22.08" x2="12" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="campaign-benefit__content">
+                <div class="campaign-benefit__title" data-i18n="campaign.bonus2.title">
+                  協賛店紹介で
+                </div>
+                <div class="campaign-benefit__amount campaign-benefit__amount--small" data-testid="text-bonus-amount-2">¥5,000/月</div>
+                <div class="campaign-benefit__subtitle" data-i18n="campaign.bonus2.subtitle">
+                  永続配当収入
+                </div>
+                <p class="campaign-benefit__detail">
+                  紹介した協賛店の広告費が発生した月の翌日から配当開始。店舗が継続している限り<strong>永続的に</strong>配当が入り続けます。<br>
+                  <span class="campaign-benefit__highlight">最大100店舗/ガイドまで可能</span><br>
+                  <span class="campaign-benefit__example">例：¥5,000 × 100店舗 = <strong>¥500,000/月</strong></span>
+                </p>
+                <p class="campaign-benefit__rank">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" stroke="currentColor" stroke-width="2" fill="none"/>
+                  </svg>
+                  貢献度に応じてランクアップ！活躍次第でさらなる特典も
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <button class="btn btn--primary btn--large btn--campaign open-line-modal" data-i18n="cta.line" data-testid="button-line-register-campaign">
+            <svg class="btn__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314" fill="currentColor"/>
+            </svg>
+            LINEで1分登録
+          </button>
+          
+          <p class="campaign-note" data-i18n="campaign.note">
+            ※特典は先着50名様限定です。定員に達し次第、予告なく終了いたします。<br>
+            ※各特典には条件があります。詳細は登録後にご確認ください。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section section--light" id="faq">
+      <div class="container container--narrow">
+        <h2 class="section__title" data-i18n="faq.title" data-testid="text-faq-title">
+          よくあるご質問
+        </h2>
+        
+        <div class="faq-list">
+          <details class="faq-item faq-item--main" open data-testid="faq-main-1">
+            <summary class="faq-item__question">
+              未経験でもガイドになれますか？
+              <svg class="faq-item__icon" width="24" height="24" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </summary>
+            <div class="faq-item__answer">
+              はい、問題ありません。TomoTripでは、地元の知識や魅力を伝える熱意があれば、どなたでもガイドとして活躍できます。専門的な資格や経験は不要です。最初は簡単なカフェ巡りや街歩きプランから始める方が多く、徐々に自信をつけていけます。
+            </div>
+          </details>
+          
+          <details class="faq-item faq-item--main" data-testid="faq-main-2">
+            <summary class="faq-item__question">
+              時間の縛りはありますか？
+              <svg class="faq-item__icon" width="24" height="24" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </summary>
+            <div class="faq-item__answer">
+              いいえ、時間の縛りはありません。あなたの都合の良い時間にプランを設定でき、自由なスケジュールで働けます。週に1回、月に数回だけでもOK。副業や隙間時間の活用に最適です。急な予定変更にも柔軟に対応できる仕組みになっています。
+            </div>
+          </details>
+          
+          <details class="faq-item faq-item--main" data-testid="faq-main-3">
+            <summary class="faq-item__question">
+              英語ができなくても大丈夫ですか？
+              <svg class="faq-item__icon" width="24" height="24" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </summary>
+            <div class="faq-item__answer">
+              はい、大丈夫です。日本語のみのガイドも多数活躍しています。国内旅行者や日本語を学ぶ外国人観光客向けのプランも人気です。もちろん、英語やその他の言語ができれば、より幅広い旅行者に対応でき、高単価なプランも作成できます。
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- LINE Registration Modal -->
+  <div id="lineModal" class="modal" data-testid="modal-line-registration">
+    <div class="modal__overlay" id="lineModalOverlay"></div>
+    <div class="modal__content">
+      <div class="modal__header">
+        <h3 class="modal__title">LINE登録</h3>
+        <button class="modal__close" id="closeLineModal" aria-label="閉じる" data-testid="button-close-line-modal">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+      <p class="modal__description">あなたに合った登録タイプをお選びください</p>
+      <div class="modal__options">
+        <button class="option-card option-card--tourist" data-keyword="観光客" data-testid="button-line-tourist">
+          <div class="option-card__icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+          <h4 class="option-card__title">観光客登録</h4>
+          <p class="option-card__description">地元ガイドと旅を楽しむ</p>
+          <div class="option-card__features">
+            <span class="feature-tag">地元民ならではの案内</span>
+            <span class="feature-tag">カスタムプラン</span>
+          </div>
+        </button>
+        
+        <button class="option-card option-card--guide" data-keyword="ガイド" data-testid="button-line-guide">
+          <div class="option-card__icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="2"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h4 class="option-card__title">ガイド登録</h4>
+          <p class="option-card__description">地元を案内して収入を得る</p>
+          <div class="option-card__features">
+            <span class="feature-tag">¥6,000~/セッション</span>
+            <span class="feature-tag">自由な時間設定</span>
+          </div>
+        </button>
+        
+        <button class="option-card option-card--sponsor" data-keyword="協賛店" data-testid="button-line-sponsor">
+          <div class="option-card__icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <polyline points="3.27 6.96 12 12.01 20.73 6.96" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <line x1="12" y1="22.08" x2="12" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h4 class="option-card__title">協賛店登録</h4>
+          <p class="option-card__description">観光客を店舗へ誘導</p>
+          <div class="option-card__features">
+            <span class="feature-tag">集客サポート</span>
+            <span class="feature-tag">永続配当あり</span>
+          </div>
+        </button>
+      </div>
+      
+      <!-- Fallback Helper (hidden by default) -->
+      <div id="lineFallbackHelper" class="fallback-helper" style="display: none;">
+        <div class="fallback-helper__content">
+          <p class="fallback-helper__message">LINEを開いたら、以下のキーワードを送信してください：</p>
+          <div class="fallback-helper__keyword-box">
+            <span id="fallbackKeyword" class="fallback-helper__keyword"></span>
+            <button id="copyKeywordBtn" class="fallback-helper__copy-btn" data-testid="button-copy-keyword">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2" stroke="currentColor" stroke-width="2"/>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" stroke="currentColor" stroke-width="2"/>
+              </svg>
+              コピー
+            </button>
+          </div>
+          <p class="fallback-helper__note">※キーワードが自動入力されていない場合のみ、手動で貼り付けてください</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Video Selection Modal -->
+  <div id="videoModal" class="modal" data-testid="modal-video-selection">
+    <div class="modal__overlay" id="videoModalOverlay"></div>
+    <div class="modal__content">
+      <div class="modal__header">
+        <h3 class="modal__title">サービス紹介動画</h3>
+        <button class="modal__close" id="closeVideoModal" aria-label="閉じる" data-testid="button-close-video-modal">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+      <p class="modal__description">ご覧になりたい動画を選択してください</p>
+      <div class="modal__options">
+        <button class="option-card option-card--guide" data-video-url="https://www.youtube.com/watch?v=GUIDE_VIDEO_ID" data-testid="button-video-guide">
+          <div class="option-card__icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+              <polygon points="10 8 16 12 10 16 10 8" fill="currentColor"/>
+            </svg>
+          </div>
+          <h4 class="option-card__title">ガイド向け</h4>
+          <p class="option-card__description">収入を得る仕組みを解説</p>
+          <span class="video-duration">30秒</span>
+        </button>
+        
+        <button class="option-card option-card--tourist" data-video-url="https://www.youtube.com/watch?v=TOURIST_VIDEO_ID" data-testid="button-video-tourist">
+          <div class="option-card__icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+              <polygon points="10 8 16 12 10 16 10 8" fill="currentColor"/>
+            </svg>
+          </div>
+          <h4 class="option-card__title">観光客向け</h4>
+          <p class="option-card__description">ガイド予約の流れを紹介</p>
+          <span class="video-duration">30秒</span>
+        </button>
+        
+        <button class="option-card option-card--sponsor" data-video-url="https://www.youtube.com/watch?v=SPONSOR_VIDEO_ID" data-testid="button-video-sponsor">
+          <div class="option-card__icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+              <polygon points="10 8 16 12 10 16 10 8" fill="currentColor"/>
+            </svg>
+          </div>
+          <h4 class="option-card__title">協賛店向け</h4>
+          <p class="option-card__description">集客と配当の仕組み</p>
+          <span class="video-duration">30秒</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Video Player Modal -->
+  <div id="videoPlayerModal" class="modal modal--video" data-testid="modal-video-player">
+    <div class="modal__overlay" id="videoPlayerOverlay"></div>
+    <div class="modal__content modal__content--video">
+      <button class="modal__close modal__close--video" id="closeVideoPlayer" aria-label="閉じる" data-testid="button-close-video-player">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+      <div class="video-container" id="videoContainer">
+        <!-- Video will be inserted here dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer__section">
+          <div class="footer__logo" data-testid="text-footer-logo">
+            <img src="/tomotrip-logo.png" alt="TomoTrip" class="footer__logo-img">
+            TomoTrip
+          </div>
+          <p class="footer__description" data-i18n="footer.description">
+            地元ガイドと旅行者をつなぐ<br>マッチングプラットフォーム
+          </p>
+        </div>
+        
+        <div class="footer__section">
+          <h4 class="footer__heading" data-i18n="footer.company.title">会社情報</h4>
+          <ul class="footer__links">
+            <!-- TODO: Add actual company page URLs -->
+            <li><a href="#" class="footer__link" data-i18n="footer.company.about" data-testid="link-about">会社概要</a></li>
+            <li><a href="#" class="footer__link" data-i18n="footer.company.team" data-testid="link-team">チーム</a></li>
+            <li><a href="#" class="footer__link" data-i18n="footer.company.careers" data-testid="link-careers">採用情報</a></li>
+            <li><a href="#" class="footer__link" data-i18n="footer.company.press" data-testid="link-press">プレス</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer__section">
+          <h4 class="footer__heading" data-i18n="footer.legal.title">法的事項</h4>
+          <ul class="footer__links">
+            <!-- TODO: Add actual legal page URLs -->
+            <li><a href="#" class="footer__link" data-i18n="footer.legal.terms" data-testid="link-terms">利用規約</a></li>
+            <li><a href="#" class="footer__link" data-i18n="footer.legal.privacy" data-testid="link-privacy">プライバシーポリシー</a></li>
+            <li><a href="#" class="footer__link" data-i18n="footer.legal.commerce" data-testid="link-commerce">特定商取引法</a></li>
+            <li><a href="#" class="footer__link" data-i18n="footer.legal.guidelines" data-testid="link-guidelines">ガイドライン</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer__section">
+          <h4 class="footer__heading" data-i18n="footer.social.title">フォローする</h4>
+          <div class="footer__social">
+            <!-- TODO: Add actual social media URLs -->
+            <a href="#" class="footer__social-link" aria-label="Twitter" data-testid="link-twitter">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Facebook" data-testid="link-facebook">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Instagram" data-testid="link-instagram">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="LINE" data-testid="link-line">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer__bottom">
+        <p class="footer__copyright" data-i18n="footer.copyright">
+          &copy; 2025 TomoTrip. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Video Modal -->
+  <div class="modal" id="videoModal" role="dialog" aria-modal="true" aria-labelledby="videoModalTitle" data-testid="modal-video">
+    <div class="modal__overlay" id="modalOverlay"></div>
+    <div class="modal__content">
+      <button class="modal__close" id="closeVideoBtn" aria-label="モーダルを閉じる" data-testid="button-close-video">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <h2 id="videoModalTitle" class="sr-only">紹介動画</h2>
+      <div class="video-container">
+        <!-- TODO: Replace with actual YouTube embed URL -->
+        <iframe
+          id="videoIframe"
+          src=""
+          data-src="https://www.youtube.com/embed/dQw4w9WgXcQ?enablejsapi=1"
+          title="TomoTrip 紹介動画"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          loading="lazy"
+          data-testid="iframe-video">
+        </iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Fixed Mobile CTA Bar -->
+  <div class="mobile-cta" id="mobileCTA" data-testid="bar-mobile-cta">
+    <button class="btn btn--primary btn--mobile-cta open-line-modal" data-i18n="cta.line" data-testid="button-line-register-mobile">
+      <svg class="btn__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314" fill="currentColor"/>
+      </svg>
+      LINEで1分登録
+    </button>
+  </div>
+
+  <!-- JavaScript -->
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
