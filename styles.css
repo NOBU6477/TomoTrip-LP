@@ -213,6 +213,7 @@ body {
     rgba(26, 26, 26, 0.25) 100%
   );
   z-index: 1;
+    display: none;
 }
 
 .hero__content {
