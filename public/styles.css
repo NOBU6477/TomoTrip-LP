@@ -2135,3 +2135,10 @@ body {
 }
 
 
+
+.sponsor-note {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 12px;
+  line-height: 1.6;
+}
