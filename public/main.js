@@ -378,7 +378,7 @@
     }
 
     if (sponsorCtaBtn) {
-      sponsorCtaBtn.textContent = 'ご相談・案内へ進む';
+      sponsorCtaBtn.textContent = 'LINEで相談・案内を受ける';
     }
 
     if (mobileCtaBtn) {
