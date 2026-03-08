@@ -1531,6 +1531,22 @@ body {
   border-radius: var(--radius-sm);
 }
 
+.option-card__cta {
+  display: inline-block;
+  margin-top: var(--spacing-md);
+  padding: 0.5rem 1.25rem;
+  background-color: var(--color-primary);
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: var(--radius-full);
+  transition: background-color var(--transition-fast);
+}
+
+.option-card:hover .option-card__cta {
+  background-color: var(--color-primary-dark, #1a7a5a);
+}
+
 .video-duration {
   display: inline-block;
   padding: 0.25rem var(--spacing-md);
@@ -1884,6 +1900,13 @@ body {
   font-size: 12px;
   color: #666;
   margin: 0;
+}
+
+.hero-cta-card__subnote {
+  font-size: 11px;
+  color: #999;
+  margin: 4px 0 0;
+  line-height: 1.5;
 }
 
 /* Main Hero CTA Button - 1.3x larger, high contrast */

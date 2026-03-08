@@ -26,3 +26,13 @@ backup/         # Historical versions for reference
 ## Deployment
 - Configured as a **static** deployment
 - Public directory: `public/`
+- `vercel.json` specifies `outputDirectory: "public"` for Vercel
+
+## Compliance & Copy History
+- All guaranteed-income / MLM / dividend language removed (Rounds 1-3)
+- Sponsor section uses "広告掲載・送客支援" framing with legal disclaimers
+- First-view and modal copy softened (登録圧→柔らかい案内トーン)
+  - Hero: "あなたに合った始め方を選ぶ" (was "公式アプリで登録を始める")
+  - Modal: "ご利用タイプを選択してください" (was "LINE登録")
+  - Cards: "〇〇向け" + "〇〇として進む" (was "〇〇登録")
+- Image paths use bare filenames (no `public/` prefix) — web root = `public/`
