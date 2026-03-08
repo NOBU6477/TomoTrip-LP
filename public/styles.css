@@ -2168,3 +2168,14 @@ body {
   margin-top: 12px;
   line-height: 1.6;
 }
+
+@keyframes sponsor-highlight {
+  0% { box-shadow: 0 0 0 0 rgba(46, 139, 87, 0.25); }
+  50% { box-shadow: 0 0 0 6px rgba(46, 139, 87, 0.1); }
+  100% { box-shadow: 0 0 0 0 rgba(46, 139, 87, 0); }
+}
+
+.sponsor-hero.is-highlighted {
+  animation: sponsor-highlight 1.2s ease-out;
+  border-radius: 12px;
+}

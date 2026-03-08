@@ -228,6 +228,15 @@
         const sponsorSection = document.getElementById('sponsor-section');
         if (sponsorSection) {
           sponsorSection.scrollIntoView({ behavior: 'smooth' });
+          const heroBlock = sponsorSection.querySelector('.sponsor-hero');
+          if (heroBlock) {
+            setTimeout(function() {
+              heroBlock.classList.add('is-highlighted');
+              heroBlock.addEventListener('animationend', function() {
+                heroBlock.classList.remove('is-highlighted');
+              }, { once: true });
+            }, 600);
+          }
         }
       } else {
         window.open(lineUrl, '_blank');
@@ -336,125 +345,58 @@
     const mobileCtaBtn = document.querySelector('[data-testid="button-line-register-mobile"]');
     const sponsorNotes = document.querySelectorAll('.sponsor-hero__note');
 
-    if (audience === 'pro') {
-      // Pro audience: App-focused messaging
-      // Update hero button text (preserve SVG icon)
-      const btnIcon = heroBtn.querySelector('.btn__icon');
-      const btnSubtitle = heroBtn.querySelector('.btn__subtitle');
-      if (btnIcon && btnSubtitle) {
-        heroBtn.innerHTML = '';
-        heroBtn.appendChild(btnIcon);
-        heroBtn.appendChild(document.createTextNode(' 公式アプリで登録を始める '));
-        btnSubtitle.textContent = 'ガイド・協賛店・観光客 登録 OK';
+    const btnIcon = heroBtn.querySelector('.btn__icon');
+    const btnSubtitle = heroBtn.querySelector('.btn__subtitle');
+    if (btnIcon) {
+      heroBtn.innerHTML = '';
+      heroBtn.appendChild(btnIcon);
+      heroBtn.appendChild(document.createTextNode(' あなたに合った始め方を選ぶ '));
+      if (btnSubtitle) {
+        btnSubtitle.textContent = '観光客・ガイド・協賛店、それぞれの入口あり';
         heroBtn.appendChild(btnSubtitle);
       }
-
-      // Update card content
-      if (heroCardTitle) {
-        heroCardTitle.textContent = '✨ アプリ登録で案内が届きます ✨';
-      }
-      if (heroCardDesc) {
-        heroCardDesc.innerHTML = '登録区分（ガイド／協賛店／観光客）をアプリ内で選ぶだけで、<br>あなたに合った、わかりやすい登録フローが届きます📱✨<br>登録後はLINEでもサポート案内が届くので安心です。';
-      }
-
-      // Update campaign button
-      if (campaignBtn) {
-        const icon = campaignBtn.querySelector('.btn__icon');
-        if (icon) {
-          campaignBtn.innerHTML = '';
-          campaignBtn.appendChild(icon);
-          campaignBtn.appendChild(document.createTextNode(' 公式アプリで1分登録'));
-        }
-      }
-
-      // Update sponsor registration button
-      if (sponsorRegBtn) {
-        sponsorRegBtn.textContent = '協賛店として登録する（公式アプリへ）';
-      }
-
-      // Update sponsor CTA button
-      if (sponsorCtaBtn) {
-        sponsorCtaBtn.textContent = '協賛店登録（公式アプリで申し込む）';
-      }
-
-      // Update mobile CTA button
-      if (mobileCtaBtn) {
-        const icon = mobileCtaBtn.querySelector('.btn__icon');
-        if (icon) {
-          mobileCtaBtn.innerHTML = '';
-          mobileCtaBtn.appendChild(icon);
-          mobileCtaBtn.appendChild(document.createTextNode(' 公式アプリで1分登録'));
-        }
-      }
-
-      // Update sponsor notes
-      sponsorNotes.forEach((note, index) => {
-        if (index === 0) {
-          note.textContent = '※公式アプリから簡単に登録できます。';
-        } else {
-          note.textContent = '※公式アプリで「協賛店希望」を選択すると、担当者からご案内します。';
-        }
-      });
-
-    } else {
-      // All audiences now use App-focused messaging (same as pro)
-      const btnIcon = heroBtn.querySelector('.btn__icon');
-      const btnSubtitle = heroBtn.querySelector('.btn__subtitle');
-      if (btnIcon && btnSubtitle) {
-        heroBtn.innerHTML = '';
-        heroBtn.appendChild(btnIcon);
-        heroBtn.appendChild(document.createTextNode(' 公式アプリで登録を始める '));
-        btnSubtitle.textContent = 'ガイド・協賛店・観光客 登録 OK';
-        heroBtn.appendChild(btnSubtitle);
-      }
-
-      // Update card content to app-focused
-      if (heroCardTitle) {
-        heroCardTitle.textContent = '✨ アプリ登録で案内が届きます ✨';
-      }
-      if (heroCardDesc) {
-        heroCardDesc.innerHTML = '登録区分（ガイド／協賛店／観光客）をアプリ内で選ぶだけで、<br>あなたに合った、わかりやすい登録フローが届きます📱✨<br>登録後はLINEでもサポート案内が届くので安心です。';
-      }
-
-      // Update campaign button
-      if (campaignBtn) {
-        const icon = campaignBtn.querySelector('.btn__icon');
-        if (icon) {
-          campaignBtn.innerHTML = '';
-          campaignBtn.appendChild(icon);
-          campaignBtn.appendChild(document.createTextNode(' 公式アプリで1分登録'));
-        }
-      }
-
-      // Update sponsor registration button
-      if (sponsorRegBtn) {
-        sponsorRegBtn.textContent = '協賛店として登録する（公式アプリへ）';
-      }
-
-      // Update sponsor CTA button
-      if (sponsorCtaBtn) {
-        sponsorCtaBtn.textContent = '協賛店登録（公式アプリで申し込む）';
-      }
-
-      // Update mobile CTA button
-      if (mobileCtaBtn) {
-        const icon = mobileCtaBtn.querySelector('.btn__icon');
-        if (icon) {
-          mobileCtaBtn.innerHTML = '';
-          mobileCtaBtn.appendChild(icon);
-          mobileCtaBtn.appendChild(document.createTextNode(' 公式アプリで1分登録'));
-        }
-      }
-
-      // Update sponsor notes
-      sponsorNotes.forEach((note, index) => {
-        if (index === 0) {
-          note.textContent = '※公式アプリから簡単に登録できます。';
-        } else {
-          note.textContent = '※公式アプリで「協賛店希望」を選択すると、担当者からご案内します。';
-        }
-      });
     }
+
+    if (heroCardTitle) {
+      heroCardTitle.textContent = 'まずは無料で確認。あなたに合った始め方を選べます';
+    }
+    if (heroCardDesc) {
+      heroCardDesc.innerHTML = '観光客・ガイド・協賛店、それぞれに合った入口をご用意しています。<br>内容確認やご相談はLINE、必要に応じて公式アプリでご案内します。';
+    }
+
+    if (campaignBtn) {
+      const icon = campaignBtn.querySelector('.btn__icon');
+      if (icon) {
+        campaignBtn.innerHTML = '';
+        campaignBtn.appendChild(icon);
+        campaignBtn.appendChild(document.createTextNode(' あなたに合った始め方を選ぶ'));
+      }
+    }
+
+    if (sponsorRegBtn) {
+      sponsorRegBtn.textContent = 'まずは内容を確認する';
+    }
+
+    if (sponsorCtaBtn) {
+      sponsorCtaBtn.textContent = 'ご相談・案内へ進む';
+    }
+
+    if (mobileCtaBtn) {
+      const icon = mobileCtaBtn.querySelector('.btn__icon');
+      if (icon) {
+        mobileCtaBtn.innerHTML = '';
+        mobileCtaBtn.appendChild(icon);
+        mobileCtaBtn.appendChild(document.createTextNode(' あなたに合った始め方を選ぶ'));
+      }
+    }
+
+    sponsorNotes.forEach((note, index) => {
+      if (index === 0) {
+        note.textContent = '※LINEで内容確認やご相談ができます。';
+      } else {
+        note.textContent = '※LINEで「協賛店について」とお伝えいただくと、担当者からご案内します。';
+      }
+    });
   }
 
   /**
