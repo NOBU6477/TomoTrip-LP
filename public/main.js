@@ -217,15 +217,22 @@
   optionCards.forEach(card => {
     card.addEventListener('click', function() {
       const keyword = this.getAttribute('data-keyword');
-      const lineUrl = 'https://lin.ee/yourline'; // TODO: Replace with actual LINE URL
+      const lineUrl = 'https://lin.ee/rsHMnPA';
       
       window.ttTrack('line_registration_click', {
         type: keyword
       });
       
-      // Open LINE with keyword
-      window.open(lineUrl, '_blank');
-      closeLineModal();
+      if (keyword === '協賛店') {
+        closeLineModal();
+        const sponsorSection = document.getElementById('sponsor-section');
+        if (sponsorSection) {
+          sponsorSection.scrollIntoView({ behavior: 'smooth' });
+        }
+      } else {
+        window.open(lineUrl, '_blank');
+        closeLineModal();
+      }
     });
   });
 
