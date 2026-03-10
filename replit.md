@@ -28,11 +28,18 @@ backup/         # Historical versions for reference
 - Public directory: `public/`
 - `vercel.json` specifies `outputDirectory: "public"` for Vercel
 
+## Navigation Flow (Current)
+- **観光客カード** → `app.tomotrip.com/tourist-registration-simple.html` (APP直行)
+- **ガイドカード** → `app.tomotrip.com/guide-registration-v2.html` (APP直行)
+- **協賛店カード** → LP内 `#sponsor-section` へスクロール → 最下部CTA → `app.tomotrip.com/sponsor-registration.html`
+- **LINE** (`lin.ee/rsHMnPA`) = 補助導線（相談・案内用）
+- 旧URL `tomotrip.com/shop-entry` は404 — LINE側で要差替
+
 ## Compliance & Copy History
 - All guaranteed-income / MLM / dividend language removed (Rounds 1-3)
 - Sponsor section uses "広告掲載・送客支援" framing with legal disclaimers
 - First-view and modal copy softened (登録圧→柔らかい案内トーン)
-  - Hero: "あなたに合った始め方を選ぶ" (was "公式アプリで登録を始める")
-  - Modal: "ご利用タイプを選択してください" (was "LINE登録")
-  - Cards: "〇〇向け" + "〇〇として進む" (was "〇〇登録")
+  - Hero: "あなたに合った始め方を選ぶ"
+  - Modal: "利用タイプを選んでください"
+  - Cards: "〇〇の方へ" + "〇〇として進む"
 - Image paths use bare filenames (no `public/` prefix) — web root = `public/`

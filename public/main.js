@@ -217,9 +217,8 @@
   optionCards.forEach(card => {
     card.addEventListener('click', function() {
       const keyword = this.getAttribute('data-keyword');
-      const lineUrl = 'https://lin.ee/rsHMnPA';
       
-      window.ttTrack('line_registration_click', {
+      window.ttTrack('registration_click', {
         type: keyword
       });
       
@@ -228,7 +227,7 @@
         const sponsorSection = document.getElementById('sponsor-section');
         if (sponsorSection) {
           sponsorSection.scrollIntoView({ behavior: 'smooth' });
-          const heroBlock = sponsorSection.querySelector('.sponsor-hero');
+          var heroBlock = sponsorSection.querySelector('.sponsor-hero');
           if (heroBlock) {
             setTimeout(function() {
               heroBlock.classList.add('is-highlighted');
@@ -238,9 +237,12 @@
             }, 600);
           }
         }
-      } else {
-        window.open(lineUrl, '_blank');
+      } else if (keyword === '観光客') {
         closeLineModal();
+        window.open('https://app.tomotrip.com/tourist-registration-simple.html', '_blank');
+      } else if (keyword === 'ガイド') {
+        closeLineModal();
+        window.open('https://app.tomotrip.com/guide-registration-v2.html', '_blank');
       }
     });
   });
@@ -332,11 +334,11 @@
    */
   function updateHeroForAudience(audience) {
     const heroBtn = document.querySelector('#openLineModalBtn');
-    const heroCard = document.querySelector('.hero-line-card');
-    const heroCardTitle = document.querySelector('.hero-line-title');
-    const heroCardDesc = document.querySelector('.hero-line-desc');
+    const heroCard = document.querySelector('.hero-cta-card');
+    const heroCardTitle = document.querySelector('.hero-cta-card__lead');
+    const heroCardDesc = document.querySelector('.hero-cta-card__subnote');
 
-    if (!heroBtn || !heroCard) return;
+    if (!heroBtn) return;
 
     // Get other buttons that need to be updated
     const campaignBtn = document.querySelector('[data-testid="button-line-register-campaign"]');
@@ -361,7 +363,7 @@
       heroCardTitle.textContent = 'まずは無料で確認。あなたに合った始め方を選べます';
     }
     if (heroCardDesc) {
-      heroCardDesc.innerHTML = '観光客・ガイド・協賛店、それぞれに合った入口をご用意しています。<br>内容確認やご相談はLINE、必要に応じて公式アプリでご案内します。';
+      heroCardDesc.textContent = 'ご不明な点はLINEでもご相談いただけます。';
     }
 
     if (campaignBtn) {
@@ -378,7 +380,7 @@
     }
 
     if (sponsorCtaBtn) {
-      sponsorCtaBtn.textContent = 'LINEで相談・案内を受ける';
+      sponsorCtaBtn.textContent = '協賛店登録ページへ進む';
     }
 
     if (mobileCtaBtn) {
@@ -394,7 +396,7 @@
       if (index === 0) {
         note.textContent = '※LINEで内容確認やご相談ができます。';
       } else {
-        note.textContent = '※LINEで「協賛店について」とお伝えいただくと、担当者からご案内します。';
+        note.innerHTML = '※ご不明な点は<a href="https://lin.ee/rsHMnPA" target="_blank" rel="noopener noreferrer" style="color: #2e8b57; text-decoration: underline;">LINE</a>でもご案内できます。';
       }
     });
   }
