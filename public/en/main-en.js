@@ -4,9 +4,9 @@
   var APP_BASE = 'https://app.tomotrip.com';
 
   var URLS = {
-    tourist: APP_BASE + '/',
-    guide:   APP_BASE + '/guide-registration-v2.html',
-    sponsor: APP_BASE + '/sponsor-registration.html'
+    tourist: APP_BASE + '/index-en.html',
+    guide:   APP_BASE + '/guide-registration-v2-en.html',
+    sponsor: APP_BASE + '/sponsor-registration-en.html'
   };
 
   /* ── Modal helpers ── */
