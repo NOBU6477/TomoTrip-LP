@@ -12,20 +12,21 @@
   /* ── Modal helpers ── */
   function openModal(el) {
     if (!el) return;
-    el.classList.add('is-active');
+    el.classList.add('active');
     document.body.style.overflow = 'hidden';
   }
 
   function closeModal(el) {
     if (!el) return;
-    el.classList.remove('is-active');
+    el.classList.remove('active');
     document.body.style.overflow = '';
   }
 
   function closeAllModals() {
     document.querySelectorAll('.modal').forEach(function (m) {
-      closeModal(m);
+      m.classList.remove('active');
     });
+    document.body.style.overflow = '';
   }
 
   /* ── DOM ready ── */
