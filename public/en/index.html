@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>TomoTrip – Travel Deeper with Local Guides in Okinawa & Japan</title>
+
+  <meta name="description" content="TomoTrip connects travelers with local guides across Japan. Discover hidden spots, authentic food, and real local culture — in Okinawa and beyond. Start for free.">
+
+  <meta property="og:title" content="TomoTrip – Travel Deeper with Local Guides in Japan">
+  <meta property="og:description" content="Connect with local guides across Japan. Authentic experiences beyond the tourist trail.">
+  <meta property="og:image" content="https://tomotrip.com/hero-beach-yacht.png">
+  <meta property="og:url" content="https://tomotrip.com/en/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="TomoTrip">
+  <meta property="og:locale" content="en_US">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="TomoTrip – Travel Deeper with Local Guides in Japan">
+  <meta name="twitter:description" content="Authentic local experiences with guides across Japan.">
+  <meta name="twitter:image" content="https://tomotrip.com/hero-beach-yacht.png">
+
+  <link rel="icon" type="image/png" href="../favicon.png">
+
+  <link rel="alternate" hreflang="ja" href="/">
+  <link rel="alternate" hreflang="en" href="/en/">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../styles.css?v=2">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Do I need to speak Japanese?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. Many of our guides speak English, and our support team responds in English. You can enjoy the experience without any Japanese." }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I book a guide?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Visit the app at app.tomotrip.com, browse available guides, and send a request. You can also contact us first to ask questions before booking." }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does it cost?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Sessions typically start from ¥6,000. The exact price depends on the guide, duration, and plan. You can confirm the price on the guide's profile before booking." }
+      },
+      {
+        "@type": "Question",
+        "name": "Is this service safe?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. All guides are reviewed and verified before joining the platform. All communication happens through the TomoTrip app, keeping both travelers and guides safe." }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I ask questions before registering?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Absolutely. You can contact our team via the contact form before signing up. We are happy to answer any questions in English." }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; }
+  </style>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ═══════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero__overlay"></div>
+
+    <!-- Logo -->
+    <a href="/en/" class="hero__logo-link">
+      <img src="../tomotrip-logo.png" alt="TomoTrip" class="hero__logo">
+    </a>
+
+    <!-- Language switcher -->
+    <a href="/" class="lang-switch lang-switch--hero" aria-label="Switch to Japanese">
+      <span class="lang-switch__flag">🇯🇵</span>
+      <span class="lang-switch__label">日本語</span>
+    </a>
+
+    <div class="hero__content container">
+      <h1 class="hero__title">
+        Travel Deeper with<br>Local Guides in Japan
+      </h1>
+      <p class="hero__subtitle">
+        TomoTrip connects travelers, local guides, and partner businesses<br>
+        through trusted local experiences.
+      </p>
+
+      <!-- CTA Card -->
+      <div class="hero-cta-card">
+        <p class="hero-cta-card__lead">Free to explore. Choose the path that's right for you.</p>
+
+        <button class="btn btn--primary btn--hero-main en-open-type-modal" id="enOpenTypeModalBtn">
+          <svg class="btn__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="2"/>
+          </svg>
+          Find Your Best Starting Point
+        </button>
+
+        <button class="btn btn--secondary-muted en-open-video-modal">
+          <svg class="btn__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 5v14l11-7z" fill="currentColor"/>
+          </svg>
+          Watch a 30-Second Intro
+        </button>
+
+        <p class="hero-cta-card__note">Options for Travelers, Local Guides, and Partner Stores</p>
+        <p class="hero-cta-card__subnote">Questions? <a href="https://app.tomotrip.com/" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:underline;">Contact us anytime.</a></p>
+      </div>
+
+      <div class="hero__badges">
+        <span class="badge">
+          <svg class="badge__icon" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="currentColor"/></svg>
+          No Japanese required
+        </span>
+        <span class="badge">
+          <svg class="badge__icon" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="currentColor"/></svg>
+          From ¥6,000 / session (est.)
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       MAIN CONTENT
+  ═══════════════════════════════════════════ -->
+  <main id="main-content">
+
+    <!-- ── What is TomoTrip ── -->
+    <section class="section section--light" id="about">
+      <div class="container">
+        <h2 class="section__title">What is TomoTrip?</h2>
+        <p class="section__lead" style="text-align:center;max-width:640px;margin:0 auto 2rem;">
+          TomoTrip is a local guide matching platform.<br>
+          Connect with locals in Okinawa and across Japan for experiences that guidebooks don't show you.
+        </p>
+        <div class="benefits-grid" style="margin-top:2rem;">
+          <div class="benefit-card">
+            <div class="benefit-card__icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" stroke="currentColor" stroke-width="2"/></svg>
+            </div>
+            <h3 class="benefit-card__title">Local guides across Japan</h3>
+            <p class="benefit-card__description">From Okinawa to Hokkaido — real locals who know their hometown inside out.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-card__icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="benefit-card__title">Flexible, personalized plans</h3>
+            <p class="benefit-card__description">No fixed tour packages. Design your own experience based on your interests and schedule.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-card__icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="benefit-card__title">Hidden spots & daily local life</h3>
+            <p class="benefit-card__description">Experience the Japan that only locals know — food, culture, neighborhoods, and hidden gems.</p>
+          </div>
+        </div>
+        <div class="section-cta" style="margin-top:2rem;text-align:center;">
+          <button class="btn btn--primary en-open-type-modal">Get Started</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── How It Works ── -->
+    <section class="section" id="how-it-works">
+      <div class="container">
+        <h2 class="section__title">How It Works</h2>
+        <div class="steps-grid">
+          <div class="step-card">
+            <img src="../step1.png" alt="Step 1" class="step-card__image">
+            <div class="step-card__number">1</div>
+            <h3 class="step-card__title">Choose your path</h3>
+            <p class="step-card__description">Are you a traveler, a local guide, or a business? Select the option that fits you.</p>
+          </div>
+          <div class="step-card">
+            <img src="../step2.png" alt="Step 2" class="step-card__image">
+            <div class="step-card__number">2</div>
+            <h3 class="step-card__title">Browse & connect</h3>
+            <p class="step-card__description">Browse guide profiles and send a request directly through the TomoTrip app.</p>
+          </div>
+          <div class="step-card">
+            <img src="../step3.png" alt="Step 3" class="step-card__image">
+            <div class="step-card__number">3</div>
+            <h3 class="step-card__title">Enjoy your experience</h3>
+            <p class="step-card__description">Meet your guide and explore Japan the local way — on your schedule.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── For Travelers ── -->
+    <section class="section section--light" id="for-travelers">
+      <div class="container">
+        <h2 class="section__title">For Travelers</h2>
+        <div class="content-block">
+          <p class="section-intro">
+            Visiting Japan and want more than the standard tourist route?<br>
+            TomoTrip connects you with local guides who can take you somewhere real.
+          </p>
+          <ul class="feature-list">
+            <li>
+              <svg class="feature-icon" width="20" height="20" viewBox="0 0 16 16" fill="none"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="currentColor"/></svg>
+              Hidden local spots, real neighborhoods
+            </li>
+            <li>
+              <svg class="feature-icon" width="20" height="20" viewBox="0 0 16 16" fill="none"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="currentColor"/></svg>
+              Local food, cafes, everyday culture
+            </li>
+            <li>
+              <svg class="feature-icon" width="20" height="20" viewBox="0 0 16 16" fill="none"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="currentColor"/></svg>
+              No Japanese required — English-speaking guides available
+            </li>
+            <li>
+              <svg class="feature-icon" width="20" height="20" viewBox="0 0 16 16" fill="none"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="currentColor"/></svg>
+              Flexible plans — your schedule, your pace
+            </li>
+          </ul>
+          <div class="section-cta" style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:1.5rem;">
+            <a href="https://app.tomotrip.com/" target="_blank" rel="noopener noreferrer" class="btn btn--primary">Explore on the App</a>
+            <button class="btn btn--ghost en-open-type-modal">Find a Guide</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── For Guides ── -->
+    <section class="section" id="for-guides">
+      <div class="container">
+        <h2 class="section__title">For Local Guides</h2>
+        <div class="content-block">
+          <p class="section-intro">
+            Live in Japan and want to share your local knowledge?<br>
+            Become a guide on your own terms — no fixed schedule, no license required.
+          </p>
+          <ul class="feature-list">
+            <li>
+              <svg class="feature-icon" width="20" height="20" viewBox="0 0 16 16" fill="none"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="currentColor"/></svg>
+              Flexible schedule — work when it suits you
+            </li>
+            <li>
+              <svg class="feature-icon" width="20" height="20" viewBox="0 0 16 16" fill="none"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="currentColor"/></svg>
+              No professional tour guide license needed
+            </li>
+            <li>
+              <svg class="feature-icon" width="20" height="20" viewBox="0 0 16 16" fill="none"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="currentColor"/></svg>
+              Available to guides across Japan — any region
+            </li>
+            <li>
+              <svg class="feature-icon" width="20" height="20" viewBox="0 0 16 16" fill="none"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="currentColor"/></svg>
+              Share your daily life, local knowledge, and community
+            </li>
+          </ul>
+          <div class="section-cta" style="margin-top:1.5rem;">
+            <a href="https://app.tomotrip.com/guide-registration-v2.html" target="_blank" rel="noopener noreferrer" class="btn btn--primary">Apply as a Guide</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── For Partners ── -->
+    <section class="section section--light" id="for-partners">
+      <div class="container">
+        <h2 class="section__title">For Partner Stores</h2>
+        <div class="content-block">
+          <p class="section-intro">
+            Own or manage a local business in Japan?<br>
+            Partner with TomoTrip to reach travelers through guide recommendations.
+          </p>
+          <ul class="feature-list">
+            <li>
+              <svg class="feature-icon" width="20" height="20" viewBox="0 0 16 16" fill="none"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="currentColor"/></svg>
+              Restaurants, cafes, activities, shops & more
+            </li>
+            <li>
+              <svg class="feature-icon" width="20" height="20" viewBox="0 0 16 16" fill="none"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="currentColor"/></svg>
+              Promotion through local guide referrals
+            </li>
+            <li>
+              <svg class="feature-icon" width="20" height="20" viewBox="0 0 16 16" fill="none"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="currentColor"/></svg>
+              Reach travelers seeking authentic local experiences
+            </li>
+          </ul>
+          <div class="section-cta" style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:1.5rem;">
+            <a href="https://app.tomotrip.com/sponsor-registration.html" target="_blank" rel="noopener noreferrer" class="btn btn--primary">Join as a Partner</a>
+            <a href="#faq" class="btn btn--ghost">See FAQ</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Safety & Trust ── -->
+    <section class="section" id="safety">
+      <div class="container">
+        <h2 class="section__title">Safe, Simple &amp; Transparent</h2>
+        <div class="trust-grid">
+          <div class="trust-item">
+            <svg class="trust-icon" width="32" height="32" viewBox="0 0 24 24" fill="none">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <h3 style="font-size:1rem;font-weight:600;margin:0.5rem 0 0.25rem;">Verified Guides</h3>
+            <p>All guides are reviewed and approved before joining the platform.</p>
+          </div>
+          <div class="trust-item">
+            <svg class="trust-icon" width="32" height="32" viewBox="0 0 24 24" fill="none">
+              <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <h3 style="font-size:1rem;font-weight:600;margin:0.5rem 0 0.25rem;">In-App Communication</h3>
+            <p>All messages and bookings happen through the TomoTrip platform — no private contact required.</p>
+          </div>
+          <div class="trust-item">
+            <svg class="trust-icon" width="32" height="32" viewBox="0 0 24 24" fill="none">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <polyline points="22 4 12 14.01 9 11.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <h3 style="font-size:1rem;font-weight:600;margin:0.5rem 0 0.25rem;">Clear Pricing</h3>
+            <p>Prices are shown on each guide's profile. No hidden fees or surprise charges.</p>
+          </div>
+          <div class="trust-item">
+            <svg class="trust-icon" width="32" height="32" viewBox="0 0 24 24" fill="none">
+              <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+              <polyline points="12 6 12 12 16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <h3 style="font-size:1rem;font-weight:600;margin:0.5rem 0 0.25rem;">English Support</h3>
+            <p>Our team responds in English. Ask questions any time before, during, or after your experience.</p>
+          </div>
+        </div>
+        <p class="trust-note">
+          We are committed to safe, enjoyable experiences for every traveler, guide, and partner on the platform.
+        </p>
+      </div>
+    </section>
+
+    <!-- ── FAQ ── -->
+    <section class="section section--light" id="faq">
+      <div class="container">
+        <h2 class="section__title">Frequently Asked Questions</h2>
+        <div class="faq-list">
+
+          <div class="faq-item">
+            <button class="faq-item__question" aria-expanded="false">
+              Do I need to speak Japanese?
+              <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="faq-item__answer">
+              No. Many guides speak English, and our support team communicates in English. You do not need to know any Japanese to enjoy TomoTrip.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-item__question" aria-expanded="false">
+              How do I book a guide?
+              <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="faq-item__answer">
+              Visit the app at <a href="https://app.tomotrip.com/" target="_blank" rel="noopener noreferrer">app.tomotrip.com</a>, browse guide profiles, and send a booking request. You can also contact us first to ask any questions before you commit.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-item__question" aria-expanded="false">
+              How much does it cost?
+              <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="faq-item__answer">
+              Sessions typically start from ¥6,000. The exact price depends on the guide, plan, and duration. All pricing is shown clearly on each guide's profile — no hidden fees.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-item__question" aria-expanded="false">
+              Is this service safe?
+              <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="faq-item__answer">
+              Yes. All guides are reviewed before joining, and all communication happens within the TomoTrip platform. We do not facilitate off-platform meetings or private contact exchanges.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-item__question" aria-expanded="false">
+              Can I ask questions before registering?
+              <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="faq-item__answer">
+              Absolutely. You can reach us via the app at <a href="https://app.tomotrip.com/" target="_blank" rel="noopener noreferrer">app.tomotrip.com</a> before signing up. We are happy to answer any questions in English.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Final CTA ── -->
+    <section class="section section--accent" id="final-cta">
+      <div class="container">
+        <div class="final-cta-content">
+          <h2 class="final-cta-title">Ready to Experience Japan Like a Local?</h2>
+          <div class="final-cta-buttons">
+            <button class="btn btn--primary btn--large en-open-type-modal">Find Your Best Starting Point</button>
+            <a href="https://app.tomotrip.com/" target="_blank" rel="noopener noreferrer" class="btn btn--ghost btn--large">Explore on the App</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer__section">
+          <div class="footer__logo">
+            <img src="../tomotrip-logo.png" alt="TomoTrip" class="footer__logo-img">
+            TomoTrip
+          </div>
+          <p class="footer__description">
+            Connecting travelers with<br>local guides across Japan
+          </p>
+        </div>
+        <div class="footer__section">
+          <h4 class="footer__heading">Language</h4>
+          <ul class="footer__links">
+            <li><a href="/" class="footer__link">日本語</a></li>
+            <li><a href="/en/" class="footer__link footer__link--active">English</a></li>
+          </ul>
+        </div>
+        <div class="footer__section">
+          <h4 class="footer__heading">For You</h4>
+          <ul class="footer__links">
+            <li><a href="#for-travelers" class="footer__link">For Travelers</a></li>
+            <li><a href="#for-guides" class="footer__link">For Guides</a></li>
+            <li><a href="#for-partners" class="footer__link">For Partners</a></li>
+            <li><a href="#safety" class="footer__link">Safety</a></li>
+            <li><a href="#faq" class="footer__link">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer__section">
+          <h4 class="footer__heading">Legal</h4>
+          <ul class="footer__links">
+            <li><a href="#" class="footer__link">Terms of Service</a></li>
+            <li><a href="#" class="footer__link">Privacy Policy</a></li>
+            <li><a href="#" class="footer__link">Guidelines</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2025 TomoTrip. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════
+       USER TYPE MODAL
+  ═══════════════════════════════════════════ -->
+  <div id="enTypeModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="enTypeModalTitle">
+    <div class="modal__overlay"></div>
+    <div class="modal__content">
+      <div class="modal__header">
+        <h3 class="modal__title" id="enTypeModalTitle">Choose Your User Type</h3>
+        <button class="modal__close" aria-label="Close">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+      <p class="modal__description">Please choose the path that fits you best.</p>
+      <div class="modal__options">
+
+        <button class="option-card option-card--tourist en-type-card" data-type="tourist">
+          <div class="option-card__icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+          <h4 class="option-card__title">For Travelers</h4>
+          <p class="option-card__description">Explore Japan with local guides, discover hidden spots, and enjoy personal experiences.</p>
+          <div class="option-card__features">
+            <span class="feature-tag">English OK</span>
+            <span class="feature-tag">Browse guides first</span>
+          </div>
+          <span class="option-card__cta">Find a Guide →</span>
+        </button>
+
+        <button class="option-card option-card--guide en-type-card" data-type="guide">
+          <div class="option-card__icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="2"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h4 class="option-card__title">For Local Guides</h4>
+          <p class="option-card__description">Share your local knowledge, set your own style, and create opportunities through guiding.</p>
+          <div class="option-card__features">
+            <span class="feature-tag">Flexible hours</span>
+            <span class="feature-tag">Any region in Japan</span>
+          </div>
+          <span class="option-card__cta">Apply as a Guide →</span>
+        </button>
+
+        <button class="option-card option-card--sponsor en-type-card" data-type="sponsor">
+          <div class="option-card__icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <polyline points="3.27 6.96 12 12.01 20.73 6.96" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <line x1="12" y1="22.08" x2="12" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h4 class="option-card__title">For Partner Stores</h4>
+          <p class="option-card__description">Promote your business through local guide recommendations, visitor referrals, and online visibility.</p>
+          <div class="option-card__features">
+            <span class="feature-tag">Visitor referrals</span>
+            <span class="feature-tag">Reach travelers</span>
+          </div>
+          <span class="option-card__cta">Join as a Partner →</span>
+        </button>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       VIDEO MODAL
+  ═══════════════════════════════════════════ -->
+  <div id="enVideoModal" class="modal" role="dialog" aria-modal="true">
+    <div class="modal__overlay"></div>
+    <div class="modal__content">
+      <div class="modal__header">
+        <h3 class="modal__title">Intro Videos</h3>
+        <button class="modal__close" aria-label="Close">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+      <p class="modal__description">Choose the video that matches your interest.</p>
+      <div class="modal__options">
+
+        <button class="option-card option-card--guide" onclick="window.open('https://www.youtube.com/watch?v=GUIDE_VIDEO_ID','_blank','noopener,noreferrer')">
+          <div class="option-card__icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><polygon points="10 8 16 12 10 16 10 8" fill="currentColor"/></svg>
+          </div>
+          <h4 class="option-card__title">For Guides</h4>
+          <p class="option-card__description">How earning and guiding works</p>
+          <span class="video-duration">30 sec</span>
+        </button>
+
+        <button class="option-card option-card--tourist" onclick="window.open('https://www.youtube.com/watch?v=TOURIST_VIDEO_ID','_blank','noopener,noreferrer')">
+          <div class="option-card__icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><polygon points="10 8 16 12 10 16 10 8" fill="currentColor"/></svg>
+          </div>
+          <h4 class="option-card__title">For Travelers</h4>
+          <p class="option-card__description">How to book and explore with a local guide</p>
+          <span class="video-duration">30 sec</span>
+        </button>
+
+        <button class="option-card option-card--sponsor" onclick="window.open('https://www.youtube.com/watch?v=SPONSOR_VIDEO_ID','_blank','noopener,noreferrer')">
+          <div class="option-card__icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><polygon points="10 8 16 12 10 16 10 8" fill="currentColor"/></svg>
+          </div>
+          <h4 class="option-card__title">For Partners</h4>
+          <p class="option-card__description">How the partner referral program works</p>
+          <span class="video-duration">30 sec</span>
+        </button>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Fixed Mobile CTA -->
+  <div class="mobile-cta" id="enMobileCTA" style="display:none;">
+    <button class="btn btn--primary btn--mobile-cta en-open-type-modal">
+      <svg class="btn__icon" width="20" height="20" viewBox="0 0 24 24" fill="none">
+        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="2"/>
+      </svg>
+      Find Your Best Starting Point
+    </button>
+  </div>
+
+  <script src="main-en.js?v=1"></script>
+</body>
+</html>
