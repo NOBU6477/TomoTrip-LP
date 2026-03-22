@@ -1,0 +1,158 @@
+目的：
+既存の日本語版LPを壊さずに、英語版LPを新規追加してください。
+現在のLP構成・レイアウト・デザインルールはできるだけ維持し、英語版は別ページとして実装してください。
+
+前提条件：
+- 既存の日本語版LPは完成度が高いため、大きな構造変更は禁止
+- 既存日本語版の文言・導線・動作を壊さないこと
+- 英語版は日本語版のUI構造を流用して作ること
+- 英語版ではLINEを前面に出さず、App / Contact / FAQ / Safety を優先導線にすること
+- 変更対象は LP 側のみ
+- App本体の既存登録画面は壊さないこと
+
+実装方針：
+1. 日本語版LPはそのまま維持
+2. 英語版LPを別ページで追加
+3. 日本語版と英語版の両方に言語切替ボタンを実装
+4. 英語版は日本語版の直訳ではなく、外国人向け導線に最適化
+5. 既存の見た目・色・余白・モーダルUIをできるだけ再利用
+6. 既存アセット（画像・CSS・JS）を可能な限り流用
+7. 既存日本語版ファイルはバックアップまたは差分が追いやすい形で作業すること
+
+希望するURL構成：
+- 日本語版LP： /
+- 英語版LP： /en/ または /en/index.html
+- 英語問い合わせ： /en/contact または既存の問い合わせ導線に準拠
+- App本体： https://app.tomotrip.com/
+
+実装タスク：
+A. 英語版LPページ作成
+- 日本語版LPをベースに英語版ページを追加
+- 推奨ファイル例：
+  - /en/index.html
+  - 必要に応じて /en 用の文言や軽微なスタイル差分
+- ただしCSSやJSは共通利用を優先
+
+B. Heroセクション英語化
+見出し候補：
+Travel Deeper with Local Guides in Okinawa
+
+サブ見出し候補：
+TomoTrip helps travelers, local guides, and partner businesses connect through trusted local experiences.
+
+ボタン：
+- Find Your Best Starting Point
+- Explore on the App
+- Ask a Question
+- Watch a 30-Second Intro
+
+リンク先ルール：
+- Find Your Best Starting Point → 利用タイプモーダル or entry section
+- Explore on the App → https://app.tomotrip.com/
+- Ask a Question → /en/contact
+- Watch a 30-Second Intro → 動画モーダル
+
+注意：
+- 英語版HeroではLINEアイコンやLINE主導線を使わないこと
+- 日本語版Heroの既存ボタンは原則維持し、壊さないこと
+
+C. 利用タイプ選択モーダル英語版
+見出し：
+Choose Your User Type
+
+補助文：
+Please choose the path that fits you best.
+
+3カード：
+1. For Travelers
+説明：
+Explore Okinawa with local guides, discover hidden spots, and enjoy more personal experiences.
+ボタン：
+- Find a Guide
+- How It Works
+- Ask a Question
+
+2. For Local Guides
+説明：
+Share your local knowledge, set your own style, and create opportunities through guiding.
+ボタン：
+- Apply as a Guide
+- Learn How to Join
+- Ask Our Team
+
+3. For Partner Stores
+説明：
+Promote your business through local guide recommendations, visitor referrals, and online visibility.
+ボタン：
+- Join as a Partner
+- See Partnership Benefits
+- Contact Our Team
+
+D. 動画モーダル英語版
+見出し：
+Intro Videos
+
+補助文：
+Choose the video that matches your interest.
+
+カード：
+- For Guides
+- For Travelers
+- For Partners
+
+それぞれ動画視聴後に次アクションを表示できる構成にすること。
+例：
+- Go to the App
+- Ask a Question
+- Apply as a Guide
+- Request Information
+
+E. FAQ / Safety / Contactブロック追加または英語版で強調
+英語版では以下を日本語版より目立たせること：
+- FAQ
+- Safety & Verification
+- Contact Us
+
+FAQ候補：
+- Do I need to speak Japanese?
+- How do I book a guide?
+- How much does it cost?
+- Is this service safe?
+- Can I ask questions before registering?
+
+F. 言語切替ボタン
+日本語版：
+- JP 日本語（現在地）
+- US English → /en/
+
+英語版：
+- JP 日本語 → /
+- US English（現在地）
+
+既存の右上言語切替UIがあれば、それに合わせて統一すること
+
+G. 英語版の補助導線
+- 英語版ではLINE導線を前面に出さない
+- Contact / Ask a Question / Contact Our Team を使う
+- 既存App登録画面の英語版がある場合、その下部補助導線はLINEではなく Contact系文言に変更できるように設計すること
+- ただし今回はLP側の実装を優先し、App本体の大規模変更はしないこと
+
+保守ルール：
+- 既存日本語版のHTML/CSS/JSを壊さない
+- クラス名変更は最小限
+- 既存のモーダル機能やボタン挙動を壊さない
+- 日本語版の導線、特にLINE導線は維持
+- 変更差分が分かるようにファイル単位で整理
+- 必要に応じて新規ファイル追加で対応し、既存ファイルの大規模上書きは避ける
+
+成果物として出してほしいもの：
+1. 変更ファイル一覧
+2. 追加ファイル一覧
+3. どのURLで日本語版と英語版を確認できるか
+4. 既存日本語版に影響がないかの確認結果
+5. 実装後の確認手順
+6. 必要ならコミット用メッセージ案
+
+最重要：
+「既存の日本語版を壊さないこと」を最優先にしてください。
+まずは既存日本語版を保持したまま英語版LPを追加し、最小限の差分で実装してください。
