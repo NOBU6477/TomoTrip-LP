@@ -79,7 +79,7 @@
         var url = URLS[type];
         if (url) {
           closeAllModals();
-          window.open(url, '_blank', 'noopener,noreferrer');
+          window.location.href = url;
         }
       });
     });

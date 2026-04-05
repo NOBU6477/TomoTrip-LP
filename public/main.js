@@ -222,29 +222,15 @@
         type: keyword
       });
       
-      if (keyword === '協賛店') {
+      if (keyword === '観光客') {
         closeLineModal();
-        const sponsorSection = document.getElementById('sponsor-section');
-        if (sponsorSection) {
-          sponsorSection.scrollIntoView({ behavior: 'smooth' });
-          var heroBlock = sponsorSection.querySelector('.sponsor-hero');
-          if (heroBlock) {
-            setTimeout(function() {
-              heroBlock.classList.add('is-highlighted');
-              heroBlock.addEventListener('animationend', function() {
-                heroBlock.classList.remove('is-highlighted');
-              }, { once: true });
-            }, 600);
-          }
-        }
-      } else if (keyword === '観光客') {
-        closeLineModal();
-        var wTourist = window.open('https://app.tomotrip.com/tourist-registration-simple.html', '_blank', 'noopener,noreferrer');
-        if (!wTourist) { window.location.href = 'https://app.tomotrip.com/tourist-registration-simple.html'; }
+        window.location.href = 'https://app.tomotrip.com/tourist-registration-simple.html';
       } else if (keyword === 'ガイド') {
         closeLineModal();
-        var wGuide = window.open('https://app.tomotrip.com/guide-registration-v2.html', '_blank', 'noopener,noreferrer');
-        if (!wGuide) { window.location.href = 'https://app.tomotrip.com/guide-registration-v2.html'; }
+        window.location.href = 'https://app.tomotrip.com/guide-registration-v2.html';
+      } else if (keyword === '協賛店') {
+        closeLineModal();
+        window.location.href = 'https://app.tomotrip.com/sponsor-registration.html';
       }
     });
   });
