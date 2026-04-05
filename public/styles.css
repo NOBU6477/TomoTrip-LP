@@ -1412,6 +1412,21 @@ body {
   font-size: 1rem;
 }
 
+.modal__notice {
+  margin-top: var(--spacing-lg);
+  padding: 0.6rem 1rem;
+  background: rgba(0, 0, 0, 0.04);
+  border-left: 3px solid var(--color-primary, #2e8b57);
+  border-radius: 0 6px 6px 0;
+  font-size: 0.82rem;
+  color: var(--color-gray-600);
+  line-height: 1.55;
+}
+
+.modal__notice a {
+  color: inherit;
+}
+
 .modal__close {
   flex-shrink: 0;
   width: 40px;
