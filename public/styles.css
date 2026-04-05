@@ -2213,6 +2213,23 @@ body {
   top: 1.25rem;
   right: 1.25rem;
   z-index: 20;
+  background: rgba(0, 0, 0, 0.45);
+  border-color: rgba(255, 255, 255, 0.65);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.lang-switch--hero:hover {
+  background: rgba(0, 0, 0, 0.62);
+  border-color: rgba(255, 255, 255, 0.9);
+}
+
+@media (max-width: 640px) {
+  .lang-switch--hero {
+    top: 0.9rem;
+    right: 0.9rem;
+    padding: 0.3rem 0.65rem;
+    font-size: 0.78rem;
+  }
 }
 
 .lang-switch__flag {

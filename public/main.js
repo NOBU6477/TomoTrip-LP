@@ -239,10 +239,12 @@
         }
       } else if (keyword === '観光客') {
         closeLineModal();
-        window.open('https://app.tomotrip.com/tourist-registration-simple.html', '_blank');
+        var wTourist = window.open('https://app.tomotrip.com/tourist-registration-simple.html', '_blank', 'noopener,noreferrer');
+        if (!wTourist) { window.location.href = 'https://app.tomotrip.com/tourist-registration-simple.html'; }
       } else if (keyword === 'ガイド') {
         closeLineModal();
-        window.open('https://app.tomotrip.com/guide-registration-v2.html', '_blank');
+        var wGuide = window.open('https://app.tomotrip.com/guide-registration-v2.html', '_blank', 'noopener,noreferrer');
+        if (!wGuide) { window.location.href = 'https://app.tomotrip.com/guide-registration-v2.html'; }
       }
     });
   });
