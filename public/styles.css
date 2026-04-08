@@ -1924,6 +1924,58 @@ body {
   line-height: 1.5;
 }
 
+/* Quick App Entry Links — inside hero-cta-card */
+.hero-quick-links {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(0, 0, 0, 0.09);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.hero-quick-links__label {
+  font-size: 10.5px;
+  color: #aaa;
+  margin: 0 0 2px;
+  letter-spacing: 0.02em;
+}
+
+.hero-quick-links__row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.hero-quick-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 16px;
+  border: 1.5px solid #2e8b57;
+  border-radius: 8px;
+  color: #2e8b57;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  background: transparent;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+  white-space: nowrap;
+  flex: 1;
+  min-width: 140px;
+  max-width: 220px;
+}
+
+.hero-quick-link:hover,
+.hero-quick-link:focus {
+  background: #2e8b57;
+  color: #fff;
+  border-color: #2e8b57;
+}
+
 /* Main Hero CTA Button - 1.3x larger, high contrast */
 .btn--hero-main {
   display: flex;
