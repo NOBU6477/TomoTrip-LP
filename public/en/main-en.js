@@ -76,6 +76,14 @@
     document.querySelectorAll('.en-type-card').forEach(function (card) {
       card.addEventListener('click', function () {
         var type = card.dataset.type;
+        if (type === 'sponsor') {
+          closeAllModals();
+          var partnerSection = document.getElementById('for-partners');
+          if (partnerSection) {
+            partnerSection.scrollIntoView({ behavior: 'smooth' });
+          }
+          return;
+        }
         var url = URLS[type];
         if (url) {
           closeAllModals();

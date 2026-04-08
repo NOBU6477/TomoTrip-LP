@@ -230,7 +230,19 @@
         window.location.href = 'https://app.tomotrip.com/guide-registration-v2.html';
       } else if (keyword === '協賛店') {
         closeLineModal();
-        window.location.href = 'https://app.tomotrip.com/sponsor-registration.html';
+        var sponsorSection = document.getElementById('sponsor-section');
+        if (sponsorSection) {
+          sponsorSection.scrollIntoView({ behavior: 'smooth' });
+          var heroBlock = sponsorSection.querySelector('.sponsor-hero');
+          if (heroBlock) {
+            setTimeout(function () {
+              heroBlock.classList.add('is-highlighted');
+              heroBlock.addEventListener('animationend', function () {
+                heroBlock.classList.remove('is-highlighted');
+              }, { once: true });
+            }, 600);
+          }
+        }
       }
     });
   });
