@@ -1924,56 +1924,31 @@ body {
   line-height: 1.5;
 }
 
-/* Quick App Entry Links — inside hero-cta-card */
-.hero-quick-links {
-  margin-top: 14px;
-  padding-top: 12px;
-  border-top: 1px solid rgba(0, 0, 0, 0.09);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
+/* App Home Bar — top of LP, links back to app.tomotrip.com */
+.app-home-bar {
+  background: rgba(10, 10, 20, 0.88);
+  padding: 9px 20px;
+  text-align: center;
+  position: relative;
+  z-index: 200;
 }
 
-.hero-quick-links__label {
-  font-size: 10.5px;
-  color: #aaa;
-  margin: 0 0 2px;
+.app-home-bar__link {
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 12.5px;
+  font-weight: 500;
+  text-decoration: none;
   letter-spacing: 0.02em;
-}
-
-.hero-quick-links__row {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
-}
-
-.hero-quick-link {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  padding: 7px 16px;
-  border: 1.5px solid #2e8b57;
-  border-radius: 8px;
-  color: #2e8b57;
-  font-size: 13px;
-  font-weight: 600;
-  text-decoration: none;
-  background: transparent;
-  transition: background 0.15s, color 0.15s, border-color 0.15s;
-  white-space: nowrap;
-  flex: 1;
-  min-width: 140px;
-  max-width: 220px;
+  gap: 5px;
+  transition: color 0.15s;
 }
 
-.hero-quick-link:hover,
-.hero-quick-link:focus {
-  background: #2e8b57;
+.app-home-bar__link:hover,
+.app-home-bar__link:focus {
   color: #fff;
-  border-color: #2e8b57;
+  text-decoration: underline;
 }
 
 /* Main Hero CTA Button - 1.3x larger, high contrast */
