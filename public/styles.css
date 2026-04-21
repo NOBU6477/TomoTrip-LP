@@ -498,6 +498,28 @@ body {
   color: var(--color-gray-600);
 }
 
+.concern-card .benefit-card__icon {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.concern-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: var(--spacing-sm);
+  color: var(--color-gray-600);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.concern-list li {
+  padding: 0.85rem 1rem;
+  background: var(--color-gray-50);
+  border-radius: var(--radius-md);
+}
+
 /* ===================================================================
    HOW IT WORKS SECTION
    =================================================================== */
@@ -521,6 +543,10 @@ body {
   border-radius: var(--radius-xl);
   padding: var(--spacing-2xl);
   text-align: center;
+}
+
+.step-card.change-card {
+  padding-top: calc(var(--spacing-2xl) + var(--spacing-md));
 }
 
 .step-card__number {

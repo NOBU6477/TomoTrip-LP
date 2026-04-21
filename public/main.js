@@ -352,15 +352,15 @@
     if (btnIcon) {
       heroBtn.innerHTML = '';
       heroBtn.appendChild(btnIcon);
-      heroBtn.appendChild(document.createTextNode(' あなたに合った始め方を選ぶ '));
+      heroBtn.appendChild(document.createTextNode(' あなたの立場で始める '));
       if (btnSubtitle) {
-        btnSubtitle.textContent = '観光客・ガイド・協賛店、それぞれの入口あり';
+        btnSubtitle.textContent = '観光客・ガイド・店舗、それぞれの入口あり';
         heroBtn.appendChild(btnSubtitle);
       }
     }
 
     if (heroCardTitle) {
-      heroCardTitle.textContent = 'まずは無料で確認。あなたに合った始め方を選べます';
+      heroCardTitle.textContent = '観光客・ガイド・店舗、それぞれに最適な入口をご用意しています';
     }
     if (heroCardDesc) {
       heroCardDesc.textContent = 'ご不明な点はLINEでもご相談いただけます。';
@@ -371,7 +371,7 @@
       if (icon) {
         campaignBtn.innerHTML = '';
         campaignBtn.appendChild(icon);
-        campaignBtn.appendChild(document.createTextNode(' あなたに合った始め方を選ぶ'));
+        campaignBtn.appendChild(document.createTextNode(' あなたの立場で始める'));
       }
     }
 
@@ -388,7 +388,7 @@
       if (icon) {
         mobileCtaBtn.innerHTML = '';
         mobileCtaBtn.appendChild(icon);
-        mobileCtaBtn.appendChild(document.createTextNode(' あなたに合った始め方を選ぶ'));
+        mobileCtaBtn.appendChild(document.createTextNode(' あなたの立場で始める'));
       }
     }
 
@@ -474,8 +474,8 @@
     
     const translations = {
       ja: {
-        'hero.title': 'あなたの街が"仕事場"になる。',
-        'hero.subtitle': 'TomoTrip（旅友）— 地元ガイドで、好きな時間に収入を。'
+        'hero.title': 'あなたの知っている街、それだけで価値になる',
+        'hero.subtitle': '観光客・ガイド・店舗、それぞれに合った関わり方があります'
       },
       en: {
         'hero.title': 'Your City Becomes Your Workplace',
