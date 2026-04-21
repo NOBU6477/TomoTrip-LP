@@ -43,3 +43,4 @@ backup/         # Historical versions for reference
   - Modal: "利用タイプを選んでください"
   - Cards: "〇〇の方へ" + "〇〇として進む"
 - Image paths use bare filenames (no `public/` prefix) — web root = `public/`
+- Friendly copy refresh applied to JP LP hero, concerns, changes, concept/connection copy, final CTA, and footer notice while preserving modal and app-routing behavior.

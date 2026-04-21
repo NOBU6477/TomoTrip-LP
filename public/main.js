@@ -336,6 +336,7 @@
     const heroBtn = document.querySelector('#openLineModalBtn');
     const heroCard = document.querySelector('.hero-cta-card');
     const heroCardTitle = document.querySelector('.hero-cta-card__lead');
+    const heroCardNote = document.querySelector('.hero-cta-card__note');
     const heroCardDesc = document.querySelector('.hero-cta-card__subnote');
 
     if (!heroBtn) return;
@@ -360,10 +361,13 @@
     }
 
     if (heroCardTitle) {
-      heroCardTitle.textContent = '観光客・ガイド・店舗、それぞれに最適な入口をご用意しています';
+      heroCardTitle.textContent = '観光客・ガイド・店舗、それぞれに合った入口があります';
+    }
+    if (heroCardNote) {
+      heroCardNote.textContent = '観光客だけでなく、地元の方の参加もOKです 😊';
     }
     if (heroCardDesc) {
-      heroCardDesc.textContent = 'ご不明な点はLINEでもご相談いただけます。';
+      heroCardDesc.textContent = '迷ったら、LINEでも気軽にご相談ください。';
     }
 
     if (campaignBtn) {
@@ -474,8 +478,8 @@
     
     const translations = {
       ja: {
-        'hero.title': 'あなたの知っている街、それだけで価値になる',
-        'hero.subtitle': '観光客・ガイド・店舗、それぞれに合った関わり方があります'
+        'hero.title': 'あなたの知っている街が、誰かの特別な体験になる 🌴',
+        'hero.subtitle': '観光客・ガイド・お店。それぞれの立場で関われる、新しいカタチのサービスです。'
       },
       en: {
         'hero.title': 'Your City Becomes Your Workplace',
