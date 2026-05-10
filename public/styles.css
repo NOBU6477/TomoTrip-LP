@@ -2306,6 +2306,103 @@ body {
 }
 
 /* ─────────────────────────────────────────
+   COMMUNITY SUPPORT SPONSORS
+───────────────────────────────────────── */
+.region-sponsors {
+  background-color: var(--color-gray-50);
+}
+
+.region-sponsors__intro {
+  max-width: 640px;
+  margin: 0 auto var(--spacing-2xl);
+  text-align: center;
+  color: var(--color-gray-700);
+  font-size: 0.97rem;
+  line-height: 1.8;
+}
+
+.region-sponsors__grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-2xl);
+}
+
+.region-sponsor-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-lg) var(--spacing-md);
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  min-height: 96px;
+  transition: box-shadow var(--transition-base), border-color var(--transition-base);
+  text-decoration: none;
+}
+
+.region-sponsor-card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-gray-300);
+}
+
+.region-sponsor-card__logo {
+  max-width: 80px;
+  max-height: 48px;
+  object-fit: contain;
+}
+
+.region-sponsor-card__name {
+  font-size: 0.82rem;
+  color: var(--color-gray-700);
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.4;
+  word-break: break-all;
+}
+
+.region-sponsors__cta {
+  text-align: center;
+}
+
+.region-sponsors__cta-link {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+  border-radius: var(--radius-full);
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background var(--transition-base), color var(--transition-base);
+}
+
+.region-sponsors__cta-link:hover {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+@media (max-width: 900px) {
+  .region-sponsors__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .region-sponsors__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-sm);
+  }
+  .region-sponsor-card {
+    padding: var(--spacing-md) var(--spacing-sm);
+    min-height: 80px;
+  }
+}
+
+/* ─────────────────────────────────────────
    BUTTON-BASED FAQ (English LP)
    Uses .faq-item.is-open instead of [open]
 ───────────────────────────────────────── */

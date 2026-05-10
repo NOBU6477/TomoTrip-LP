@@ -1,0 +1,121 @@
+TomoTrip LP側に「TomoTrip地域応援スポンサー」セクションを新規追加してください。
+
+目的：
+LP上で、TomoTripの地域観光の取り組みを応援してくださる企業スポンサーを紹介し、外部向けの信頼感を高めたいです。
+これは既存の協賛店広告ではなく、地域応援スポンサーとしての企業紹介です。
+
+重要：
+既存のLPデザイン、既存導線、既存ボタン、既存レイアウトは崩さず、新規セクションとして自然に追加してください。
+既存の協賛店・スポンサー店舗・sponsor-stores機能とは混ぜないでください。
+APP側ではすでに同様の「TomoTrip地域応援スポンサー」セクションを実装済みです。LP側も思想と表示トーンを合わせてください。
+
+実装対象：
+1. 日本語LPトップ
+   public/index.html
+
+2. 英語LPトップ
+   public/en/index.html が存在する場合は英語版にも追加してください。
+
+追加するセクション名：
+TomoTrip地域応援スポンサー
+
+説明文：
+地域の観光と人のつながりを応援してくださる企業のみなさま
+
+LP側では、以下の補足文も自然に入れてください：
+TomoTripは、観光客と地域の人をつなぎ、沖縄の魅力をより深く体験してもらうためのサービスです。
+この取り組みを応援してくださる企業・団体のみなさまをご紹介します。
+
+英語版の文言：
+見出し：
+TomoTrip Community Support Sponsors
+
+説明文：
+Companies supporting local tourism and meaningful connections in Okinawa
+
+補足文：
+TomoTrip connects travelers with local people to help them experience Okinawa more deeply.
+We are grateful to the companies and organizations supporting this community-based tourism initiative.
+
+表示内容：
+・スポンサー企業ロゴを最大10社程度表示できるレイアウトにしてください。
+・ロゴがない場合は会社名テキストで代替表示してください。
+・PCでは5列×2段程度で表示してください。
+・スマホでは2列表示で、横にはみ出さず下にスクロールして確認できる形にしてください。
+・横スクロールではなく、APP側と同じく縦スクロールで見える形を優先してください。
+・表示は広告っぽくせず、信頼感のある企業紹介として見せてください。
+
+配置場所：
+ヒーロー直下には置かないでください。
+TomoTripの説明や主要導線の後、フッターより上あたりに自然に追加してください。
+
+LP側のみ追加する導線：
+「スポンサー一覧を見る」ボタンを設置してください。
+リンク先はまだページがない場合、いったん以下にしてください。
+
+/sponsor-companies.html
+
+英語版ボタン：
+View Sponsors
+
+英語版リンク先：
+/en/sponsor-companies.html
+
+文言ルール：
+・「広告」という言葉は使わないでください。
+・「協賛店」という言葉も使わないでください。
+・「スポンサー」「地域応援スポンサー」「地域応援パートナー」という表現を使ってください。
+・TomoTripの地域観光・人のつながり・沖縄を応援する企業という印象にしてください。
+
+仮データ：
+まずは仮のスポンサー企業10社分を表示してください。
+
+日本語：
+・地域応援企業A
+・地域応援企業B
+・地域応援企業C
+・地域応援企業D
+・地域応援企業E
+・地域応援企業F
+・地域応援企業G
+・地域応援企業H
+・地域応援企業I
+・地域応援企業J
+
+英語：
+・Community Sponsor A
+・Community Sponsor B
+・Community Sponsor C
+・Community Sponsor D
+・Community Sponsor E
+・Community Sponsor F
+・Community Sponsor G
+・Community Sponsor H
+・Community Sponsor I
+・Community Sponsor J
+
+データ管理：
+将来的に差し替えしやすいように、可能であれば以下のようなJSONファイルで管理してください。
+
+public/data/sponsor-companies.json
+
+ただし、現在のLP構成に合わせて、もっと安全な方法があればその構成で構いません。
+今回はDBやSupabaseには変更を加えないでください。
+
+セキュリティ：
+スポンサーURLやロゴURLを扱う場合は、XSS対策をしてください。
+innerHTMLで外部データを直接描画しないでください。
+createElement と textContent を使ってDOM構築してください。
+URLは new URL() 等で検証し、http: / https: のみ許可してください。
+javascript: などの危険なスキームは無効化してください。
+外部リンクを使う場合は target="_blank" と rel="noopener noreferrer" を付けてください。
+
+注意点：
+・既存UIを崩さないこと
+・既存のガイド、観光客、協賛店への導線は変更しないこと
+・ヒーロー直下には置かないこと
+・既存の sponsor-stores や協賛店データとは混ぜないこと
+・レスポンシブ対応を行うこと
+・スマホ表示で横幅がはみ出さないこと
+・英語版がある場合は英語版にも追加すること
+・実装後、変更ファイル、追加箇所、確認URL、確認手順を報告してください

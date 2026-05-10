@@ -816,6 +816,89 @@
     });
   };
 
+  // ===================================================================
+  // REGION SPONSORS SECTION
+  // ===================================================================
+  /**
+   * Validate a URL string — allow only http: and https: schemes.
+   * Returns the sanitized href string, or '' if invalid.
+   */
+  function sanitizeSponsorUrl(raw) {
+    if (!raw || typeof raw !== 'string') return '';
+    try {
+      var u = new URL(raw);
+      if (u.protocol !== 'http:' && u.protocol !== 'https:') return '';
+      return u.href;
+    } catch (e) {
+      return '';
+    }
+  }
+
+  /**
+   * Build a single sponsor card element using createElement + textContent
+   * (no innerHTML with external data).
+   */
+  function buildSponsorCard(sponsor) {
+    var safeUrl = sanitizeSponsorUrl(sponsor.siteUrl);
+    var tag = safeUrl ? 'a' : 'div';
+    var card = document.createElement(tag);
+    card.className = 'region-sponsor-card';
+    if (safeUrl) {
+      card.href = safeUrl;
+      card.target = '_blank';
+      card.rel = 'noopener noreferrer';
+    }
+
+    var safeLogoUrl = sanitizeSponsorUrl(sponsor.logoUrl);
+    if (safeLogoUrl) {
+      var img = document.createElement('img');
+      img.src = safeLogoUrl;
+      img.alt = '';
+      img.className = 'region-sponsor-card__logo';
+      img.setAttribute('aria-hidden', 'true');
+      card.appendChild(img);
+    }
+
+    var nameEl = document.createElement('span');
+    nameEl.className = 'region-sponsor-card__name';
+    nameEl.textContent = sponsor.name || '';
+    card.appendChild(nameEl);
+
+    return card;
+  }
+
+  /**
+   * Fetch sponsor JSON and render cards into the target grid element.
+   */
+  function loadRegionSponsors() {
+    var isEnPage = document.documentElement.lang === 'en';
+    var gridId = isEnPage ? 'region-sponsors-grid-en' : 'region-sponsors-grid-jp';
+    var langKey = isEnPage ? 'en' : 'jp';
+    var grid = document.getElementById(gridId);
+    if (!grid) return;
+
+    var jsonPath = isEnPage ? '../data/sponsor-companies.json' : '/data/sponsor-companies.json';
+
+    fetch(jsonPath)
+      .then(function(res) {
+        if (!res.ok) throw new Error('sponsor JSON fetch failed: ' + res.status);
+        return res.json();
+      })
+      .then(function(data) {
+        var sponsors = Array.isArray(data[langKey]) ? data[langKey] : [];
+        var frag = document.createDocumentFragment();
+        sponsors.forEach(function(sp) {
+          frag.appendChild(buildSponsorCard(sp));
+        });
+        grid.appendChild(frag);
+      })
+      .catch(function(err) {
+        console.warn('[TomoTrip] Region sponsors: ' + err.message);
+      });
+  }
+
+  loadRegionSponsors();
+
   /**
    * Check if element is in viewport
    */

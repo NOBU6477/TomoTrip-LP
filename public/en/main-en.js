@@ -130,5 +130,49 @@
       });
     });
 
+    /* ── Region Sponsors ── */
+    (function loadRegionSponsors() {
+      var grid = document.getElementById('region-sponsors-grid-en');
+      if (!grid) return;
+
+      function sanitizeSponsorUrl(raw) {
+        if (!raw || typeof raw !== 'string') return '';
+        try {
+          var u = new URL(raw);
+          if (u.protocol !== 'http:' && u.protocol !== 'https:') return '';
+          return u.href;
+        } catch (e) { return ''; }
+      }
+
+      function buildCard(sp) {
+        var safeUrl = sanitizeSponsorUrl(sp.siteUrl);
+        var card = document.createElement(safeUrl ? 'a' : 'div');
+        card.className = 'region-sponsor-card';
+        if (safeUrl) { card.href = safeUrl; card.target = '_blank'; card.rel = 'noopener noreferrer'; }
+        var safeLogoUrl = sanitizeSponsorUrl(sp.logoUrl);
+        if (safeLogoUrl) {
+          var img = document.createElement('img');
+          img.src = safeLogoUrl; img.alt = ''; img.className = 'region-sponsor-card__logo';
+          img.setAttribute('aria-hidden', 'true');
+          card.appendChild(img);
+        }
+        var nameEl = document.createElement('span');
+        nameEl.className = 'region-sponsor-card__name';
+        nameEl.textContent = sp.name || '';
+        card.appendChild(nameEl);
+        return card;
+      }
+
+      fetch('../data/sponsor-companies.json')
+        .then(function(res) { if (!res.ok) throw new Error(res.status); return res.json(); })
+        .then(function(data) {
+          var sponsors = Array.isArray(data.en) ? data.en : [];
+          var frag = document.createDocumentFragment();
+          sponsors.forEach(function(sp) { frag.appendChild(buildCard(sp)); });
+          grid.appendChild(frag);
+        })
+        .catch(function(err) { console.warn('[TomoTrip] Region sponsors EN: ' + err.message); });
+    }());
+
   });
 })();

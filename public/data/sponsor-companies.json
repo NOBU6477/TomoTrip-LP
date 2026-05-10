@@ -1,0 +1,26 @@
+{
+  "jp": [
+    { "name": "地域応援企業A", "logoUrl": "", "siteUrl": "" },
+    { "name": "地域応援企業B", "logoUrl": "", "siteUrl": "" },
+    { "name": "地域応援企業C", "logoUrl": "", "siteUrl": "" },
+    { "name": "地域応援企業D", "logoUrl": "", "siteUrl": "" },
+    { "name": "地域応援企業E", "logoUrl": "", "siteUrl": "" },
+    { "name": "地域応援企業F", "logoUrl": "", "siteUrl": "" },
+    { "name": "地域応援企業G", "logoUrl": "", "siteUrl": "" },
+    { "name": "地域応援企業H", "logoUrl": "", "siteUrl": "" },
+    { "name": "地域応援企業I", "logoUrl": "", "siteUrl": "" },
+    { "name": "地域応援企業J", "logoUrl": "", "siteUrl": "" }
+  ],
+  "en": [
+    { "name": "Community Sponsor A", "logoUrl": "", "siteUrl": "" },
+    { "name": "Community Sponsor B", "logoUrl": "", "siteUrl": "" },
+    { "name": "Community Sponsor C", "logoUrl": "", "siteUrl": "" },
+    { "name": "Community Sponsor D", "logoUrl": "", "siteUrl": "" },
+    { "name": "Community Sponsor E", "logoUrl": "", "siteUrl": "" },
+    { "name": "Community Sponsor F", "logoUrl": "", "siteUrl": "" },
+    { "name": "Community Sponsor G", "logoUrl": "", "siteUrl": "" },
+    { "name": "Community Sponsor H", "logoUrl": "", "siteUrl": "" },
+    { "name": "Community Sponsor I", "logoUrl": "", "siteUrl": "" },
+    { "name": "Community Sponsor J", "logoUrl": "", "siteUrl": "" }
+  ]
+}
