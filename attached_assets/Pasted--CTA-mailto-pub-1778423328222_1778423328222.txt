@@ -1,0 +1,137 @@
+スポンサー一覧ページのCTAボタンのリンク先を、mailtoではなくスポンサー募集ページへ変更してください。
+あわせて、スポンサー募集ページを新規作成してください。
+
+対象ページ：
+- public/sponsor-companies.html
+- public/en/sponsor-companies.html
+
+現在の問題：
+「スポンサーについて相談する」ボタンが mailto:info@tomotrip.com にリンクしているため、ユーザー環境によってはメールサービスのログイン画面が開いてしまいます。
+これはスポンサー候補にとって分かりにくいため、まずスポンサー募集ページへ遷移する形に変更したいです。
+
+変更内容1：既存CTAボタンのリンク変更
+
+日本語ページ：
+現在の「スポンサーについて相談する」ボタンのリンク先を以下に変更してください。
+
+/sponsor-support.html
+
+英語ページ：
+現在の「Contact Us About Sponsorship」ボタンのリンク先を以下に変更してください。
+
+/en/sponsor-support.html
+
+変更内容2：スポンサー募集ページの新規作成
+
+新規作成ページ：
+日本語：
+public/sponsor-support.html
+
+英語：
+public/en/sponsor-support.html
+
+日本語ページタイトル：
+TomoTrip地域応援スポンサー募集
+
+日本語メインコピー：
+沖縄の地域観光と人のつながりを、企業の応援で広げていく。
+
+説明文：
+TomoTripは、観光客と地域の人をつなぎ、沖縄の魅力をより深く体験してもらうためのサービスです。
+現在、この取り組みを一緒に応援してくださる地域応援スポンサー企業・団体を募集しています。
+
+掲載プラン：
+初期スポンサー10社限定
+月額 30,000円
+
+掲載内容：
+・TomoTrip LPへのスポンサー掲載
+・TomoTrip APPへのスポンサー掲載
+・スポンサー一覧ページへの掲載
+・企業名・ロゴ・業種・紹介文の掲載
+・地域観光を応援する企業としての紹介
+
+注意書き：
+スポンサー掲載は、売上や送客数を保証するものではありません。
+TomoTripの地域観光への取り組みに賛同し、応援してくださる企業・団体をご紹介するものです。
+
+問い合わせ導線：
+見出し：
+スポンサー掲載について相談する
+
+本文：
+掲載内容や初期スポンサー枠については、以下よりお気軽にお問い合わせください。
+
+ボタン1：
+メールで相談する
+リンク：
+mailto:info@tomotrip.com?subject=TomoTrip地域応援スポンサーについて
+
+ボタン2：
+トップへ戻る
+リンク：
+/
+
+英語ページタイトル：
+TomoTrip Community Support Sponsor Program
+
+英語メインコピー：
+Supporting local tourism and meaningful connections in Okinawa.
+
+英語説明文：
+TomoTrip connects travelers with local people to help them experience Okinawa more deeply.
+We are currently looking for companies and organizations that would like to support this community-based tourism initiative.
+
+Plan:
+Initial Support Sponsor Program
+JPY 30,000 / month
+
+What is included:
+・Sponsor placement on the TomoTrip LP
+・Sponsor placement on the TomoTrip APP
+・Listing on the sponsor page
+・Company name, logo, industry, and short description
+・Introduction as a company supporting local tourism
+
+Disclaimer:
+Sponsorship does not guarantee sales, customer referrals, or visitor numbers.
+This program is designed to introduce companies and organizations that support TomoTrip’s community-based tourism initiative.
+
+Contact section:
+Heading:
+Contact us about sponsorship
+
+Body:
+Please contact us to learn more about sponsorship opportunities.
+
+Button 1:
+Contact by Email
+Link:
+mailto:info@tomotrip.com?subject=TomoTrip Community Support Sponsor Inquiry
+
+Button 2:
+Back to Home
+Link:
+/en/
+
+デザイン：
+- 既存LPのトーンに合わせる
+- 白背景と薄い水色を基調にする
+- 金額は見やすくカード表示する
+- スマホで横にはみ出さない
+- 既存のスポンサー一覧ページと統一感を持たせる
+- 法務リンク付きフッターも入れる
+
+フッター：
+スポンサー一覧ページと同じ法務リンク付きフッターを入れてください。
+日本語：
+トップへ戻る / 利用規約 / プライバシーポリシー / 特定商取引法に基づく表記 / お問い合わせ
+
+英語：
+Back to Home / Terms of Use / Privacy Policy / Legal Notice / Contact
+
+注意点：
+- 既存のLPトップ、スポンサー一覧ページ、JSONデータは壊さないこと
+- 協賛店機能や sponsor-stores とは混ぜないこと
+- mailtoは募集ページ内の最終問い合わせボタンだけに使うこと
+- 実装後、変更ファイル、確認URL、確認手順を報告してください
