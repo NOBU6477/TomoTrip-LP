@@ -195,20 +195,71 @@
       padding: var(--spacing-2xl);
     }
 
-    .sc-footer {
-      background: var(--color-gray-50);
-      border-top: 1px solid var(--color-gray-200);
-      padding: var(--spacing-xl) 0;
+    /* ── CTA section ── */
+    .sc-cta {
+      background: var(--color-primary-light);
+      border-top: 1px solid rgba(0, 163, 196, 0.15);
+      padding: var(--spacing-3xl) 0;
       text-align: center;
     }
-    .sc-footer__text {
-      font-size: 0.82rem;
-      color: var(--color-gray-600);
-      margin-bottom: var(--spacing-sm);
+    .sc-cta__title {
+      font-size: clamp(1.2rem, 3vw, 1.6rem);
+      font-weight: 700;
+      color: var(--color-gray-900);
+      margin-bottom: var(--spacing-md);
+      line-height: 1.4;
     }
-    .sc-footer__copy {
-      font-size: 0.78rem;
+    .sc-cta__body {
+      max-width: 560px;
+      margin: 0 auto var(--spacing-xl);
+      color: var(--color-gray-700);
+      font-size: 0.95rem;
+      line-height: 1.85;
+    }
+    .sc-cta__btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.85rem 2.2rem;
+      background: var(--color-primary);
+      color: var(--color-white);
+      border-radius: var(--radius-full);
+      font-size: 0.97rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background var(--transition-base), transform var(--transition-base);
+      box-shadow: 0 4px 12px rgba(0, 163, 196, 0.3);
+    }
+    .sc-cta__btn:hover {
+      background: var(--color-primary-dark);
+      transform: translateY(-1px);
+    }
+
+    /* ── Footer ── */
+    .sc-footer {
+      background: var(--color-gray-900);
+      padding: var(--spacing-xl) 0 var(--spacing-lg);
+    }
+    .sc-footer__links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: var(--spacing-sm) var(--spacing-lg);
+      margin-bottom: var(--spacing-md);
+      list-style: none;
+      padding: 0;
+    }
+    .sc-footer__link {
+      font-size: 0.82rem;
       color: var(--color-gray-300);
+      text-decoration: none;
+      transition: color var(--transition-fast);
+    }
+    .sc-footer__link:hover { color: var(--color-white); }
+    .sc-footer__copy {
+      text-align: center;
+      font-size: 0.78rem;
+      color: var(--color-gray-600);
     }
   </style>
 </head>
@@ -248,9 +299,32 @@
     </div>
   </main>
 
+  <section class="sc-cta">
+    <div class="container">
+      <h2 class="sc-cta__title">Interested in becoming a TomoTrip Community Support Sponsor?</h2>
+      <p class="sc-cta__body">
+        We welcome companies and organizations that want to support local tourism and meaningful connections in Okinawa.<br>
+        Please contact us to learn more about sponsorship opportunities.
+      </p>
+      <a href="mailto:info@tomotrip.com?subject=TomoTrip Community Support Sponsor Inquiry" class="sc-cta__btn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Contact Us About Sponsorship
+      </a>
+    </div>
+  </section>
+
   <footer class="sc-footer">
     <div class="container">
-      <p class="sc-footer__text">For inquiries about sponsorship listings, please contact TomoTrip.</p>
+      <ul class="sc-footer__links">
+        <li><a href="/en/" class="sc-footer__link">Back to Home</a></li>
+        <li><a href="/en/terms.html" class="sc-footer__link">Terms of Use</a></li>
+        <li><a href="/en/privacy.html" class="sc-footer__link">Privacy Policy</a></li>
+        <li><a href="/en/commerce.html" class="sc-footer__link">Legal Notice</a></li>
+        <li><a href="mailto:info@tomotrip.com" class="sc-footer__link">Contact</a></li>
+      </ul>
       <p class="sc-footer__copy">&copy; 2025 TomoTrip. All rights reserved.</p>
     </div>
   </footer>
