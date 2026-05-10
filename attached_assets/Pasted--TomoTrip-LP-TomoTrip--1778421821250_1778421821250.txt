@@ -1,0 +1,95 @@
+次に、TomoTrip地域応援スポンサー一覧ページを作成してください。
+
+現在、LPトップに「TomoTrip地域応援スポンサー」セクションは追加済みです。
+また「スポンサー一覧を見る」ボタンは /sponsor-companies.html にリンクしています。
+しかし、まだ sponsor-companies.html が存在しないため、本番で 404: NOT_FOUND になっています。
+このリンク先ページを新規作成してください。
+
+目的：
+TomoTripを応援してくださるスポンサー企業・団体を一覧で紹介するページを作る。
+これは既存の協賛店一覧や sponsor-stores とは別物です。
+地域観光を応援してくださる企業・団体の紹介ページとして作成してください。
+
+新規作成ページ：
+日本語：
+public/sponsor-companies.html
+
+英語：
+public/en/sponsor-companies.html
+
+日本語ページタイトル：
+TomoTrip地域応援スポンサー
+
+日本語説明文：
+TomoTripは、観光客と地域の人をつなぎ、沖縄の魅力をより深く体験してもらうためのサービスです。
+この取り組みを応援してくださる企業・団体のみなさまをご紹介します。
+
+英語ページタイトル：
+TomoTrip Community Support Sponsors
+
+英語説明文：
+TomoTrip connects travelers with local people to help them experience Okinawa more deeply.
+We are grateful to the companies and organizations supporting this community-based tourism initiative.
+
+表示内容：
+スポンサー企業カード一覧を表示してください。
+
+各カードに表示する項目：
+・ロゴ
+・会社名
+・業種
+・ひとこと紹介
+・公式サイトを見るボタン
+
+英語版も同様に：
+・Logo
+・Company name
+・Industry
+・Short description
+・Visit Website button
+
+データ管理：
+既存の public/data/sponsor-companies.json を利用してください。
+必要であれば、JSONに以下の項目を追加してください。
+
+・industry_ja
+・industry_en
+・description_ja
+・description_en
+・logoUrl
+・siteUrl
+
+ただし、既存のトップページのスポンサー表示が壊れないように、現在の name / logoUrl / siteUrl との互換性を保ってください。
+
+導線：
+1. LPトップの「スポンサー一覧を見る」ボタンから /sponsor-companies.html に遷移できること
+2. 英語LPの「View Sponsors」ボタンから /en/sponsor-companies.html に遷移できること
+3. 一覧ページからトップページへ戻れるボタンを設置すること
+   日本語：トップへ戻る
+   英語：Back to Home
+
+デザイン：
+既存LPのトーンに合わせてください。
+広告感を強くせず、信頼感のある企業紹介ページにしてください。
+PCではカードを3列または4列で表示し、スマホでは1列表示で見やすくしてください。
+カードは白背景、角丸、薄い影で上品に表示してください。
+
+ロゴがない場合：
+ロゴ画像がない場合は、会社名を中央に表示するプレースホルダー表示にしてください。
+表示崩れが起きないようにしてください。
+
+セキュリティ：
+JSONデータを描画する場合、innerHTMLで外部データを直接描画しないでください。
+createElement と textContent を使ってDOM構築してください。
+URLは new URL() 等で検証し、http: / https: のみ許可してください。
+javascript: などの危険なスキームは無効化してください。
+外部リンクには target="_blank" rel="noopener noreferrer" を付けてください。
+
+注意点：
+・既存の協賛店一覧ページとは混ぜないこと
+・既存の sponsor-stores 機能とは混ぜないこと
+・既存のモーダル、LINE導線、言語切替、フッターを壊さないこと
+・スマホで横にはみ出さないこと
+・英語版も作成すること
+・Vercel本番で /sponsor-companies.html が404にならないようにすること
+・実装後、変更ファイル、確認URL、確認手順を報告してください

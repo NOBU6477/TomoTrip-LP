@@ -1,26 +1,186 @@
 {
   "jp": [
-    { "name": "地域応援企業A", "logoUrl": "", "siteUrl": "" },
-    { "name": "地域応援企業B", "logoUrl": "", "siteUrl": "" },
-    { "name": "地域応援企業C", "logoUrl": "", "siteUrl": "" },
-    { "name": "地域応援企業D", "logoUrl": "", "siteUrl": "" },
-    { "name": "地域応援企業E", "logoUrl": "", "siteUrl": "" },
-    { "name": "地域応援企業F", "logoUrl": "", "siteUrl": "" },
-    { "name": "地域応援企業G", "logoUrl": "", "siteUrl": "" },
-    { "name": "地域応援企業H", "logoUrl": "", "siteUrl": "" },
-    { "name": "地域応援企業I", "logoUrl": "", "siteUrl": "" },
-    { "name": "地域応援企業J", "logoUrl": "", "siteUrl": "" }
+    {
+      "name": "地域応援企業A",
+      "industry_ja": "観光・旅行",
+      "industry_en": "Tourism & Travel",
+      "description_ja": "地域観光の魅力を広める取り組みを長年にわたって支援しています。",
+      "description_en": "Long-term supporter of initiatives promoting local tourism.",
+      "logoUrl": "",
+      "siteUrl": ""
+    },
+    {
+      "name": "地域応援企業B",
+      "industry_ja": "宿泊・ホテル",
+      "industry_en": "Accommodation",
+      "description_ja": "旅行者が地域と深くつながれる宿泊体験を提供しています。",
+      "description_en": "Providing accommodations that connect travelers with local communities.",
+      "logoUrl": "",
+      "siteUrl": ""
+    },
+    {
+      "name": "地域応援企業C",
+      "industry_ja": "飲食・食文化",
+      "industry_en": "Food & Culture",
+      "description_ja": "沖縄の食文化を通じて観光客と地域住民の交流を育んでいます。",
+      "description_en": "Fostering exchange between visitors and locals through Okinawan food culture.",
+      "logoUrl": "",
+      "siteUrl": ""
+    },
+    {
+      "name": "地域応援企業D",
+      "industry_ja": "小売・ショッピング",
+      "industry_en": "Retail",
+      "description_ja": "地元産品を通じて、沖縄の文化と産業を応援しています。",
+      "description_en": "Supporting Okinawan culture and industry through locally made products.",
+      "logoUrl": "",
+      "siteUrl": ""
+    },
+    {
+      "name": "地域応援企業E",
+      "industry_ja": "交通・移動",
+      "industry_en": "Transportation",
+      "description_ja": "観光客が安心して沖縄を移動できる環境づくりを支援しています。",
+      "description_en": "Supporting safe and comfortable travel experiences across Okinawa.",
+      "logoUrl": "",
+      "siteUrl": ""
+    },
+    {
+      "name": "地域応援企業F",
+      "industry_ja": "IT・テクノロジー",
+      "industry_en": "IT & Technology",
+      "description_ja": "テクノロジーの力で地域観光をもっと身近なものにするサポートをしています。",
+      "description_en": "Using technology to make local tourism more accessible and enjoyable.",
+      "logoUrl": "",
+      "siteUrl": ""
+    },
+    {
+      "name": "地域応援企業G",
+      "industry_ja": "教育・文化",
+      "industry_en": "Education & Culture",
+      "description_ja": "地域の文化や歴史を次の世代へ伝える活動を応援しています。",
+      "description_en": "Committed to passing down local culture and history to future generations.",
+      "logoUrl": "",
+      "siteUrl": ""
+    },
+    {
+      "name": "地域応援企業H",
+      "industry_ja": "医療・健康",
+      "industry_en": "Healthcare & Wellness",
+      "description_ja": "旅行者と地域住民の健やかな交流を陰ながら支えています。",
+      "description_en": "Quietly supporting healthy connections between visitors and local residents.",
+      "logoUrl": "",
+      "siteUrl": ""
+    },
+    {
+      "name": "地域応援企業I",
+      "industry_ja": "金融・保険",
+      "industry_en": "Finance & Insurance",
+      "description_ja": "地域観光の持続的な発展を財務面から支援しています。",
+      "description_en": "Supporting the sustainable development of regional tourism from a financial perspective.",
+      "logoUrl": "",
+      "siteUrl": ""
+    },
+    {
+      "name": "地域応援企業J",
+      "industry_ja": "建設・不動産",
+      "industry_en": "Construction & Real Estate",
+      "description_ja": "沖縄の街づくりを通じて、訪れる人が心地よく過ごせる環境を整えています。",
+      "description_en": "Creating comfortable environments for visitors through community development in Okinawa.",
+      "logoUrl": "",
+      "siteUrl": ""
+    }
   ],
   "en": [
-    { "name": "Community Sponsor A", "logoUrl": "", "siteUrl": "" },
-    { "name": "Community Sponsor B", "logoUrl": "", "siteUrl": "" },
-    { "name": "Community Sponsor C", "logoUrl": "", "siteUrl": "" },
-    { "name": "Community Sponsor D", "logoUrl": "", "siteUrl": "" },
-    { "name": "Community Sponsor E", "logoUrl": "", "siteUrl": "" },
-    { "name": "Community Sponsor F", "logoUrl": "", "siteUrl": "" },
-    { "name": "Community Sponsor G", "logoUrl": "", "siteUrl": "" },
-    { "name": "Community Sponsor H", "logoUrl": "", "siteUrl": "" },
-    { "name": "Community Sponsor I", "logoUrl": "", "siteUrl": "" },
-    { "name": "Community Sponsor J", "logoUrl": "", "siteUrl": "" }
+    {
+      "name": "Community Sponsor A",
+      "industry_ja": "観光・旅行",
+      "industry_en": "Tourism & Travel",
+      "description_ja": "地域観光の魅力を広める取り組みを長年にわたって支援しています。",
+      "description_en": "Long-term supporter of initiatives promoting local tourism.",
+      "logoUrl": "",
+      "siteUrl": ""
+    },
+    {
+      "name": "Community Sponsor B",
+      "industry_ja": "宿泊・ホテル",
+      "industry_en": "Accommodation",
+      "description_ja": "旅行者が地域と深くつながれる宿泊体験を提供しています。",
+      "description_en": "Providing accommodations that connect travelers with local communities.",
+      "logoUrl": "",
+      "siteUrl": ""
+    },
+    {
+      "name": "Community Sponsor C",
+      "industry_ja": "飲食・食文化",
+      "industry_en": "Food & Culture",
+      "description_ja": "沖縄の食文化を通じて観光客と地域住民の交流を育んでいます。",
+      "description_en": "Fostering exchange between visitors and locals through Okinawan food culture.",
+      "logoUrl": "",
+      "siteUrl": ""
+    },
+    {
+      "name": "Community Sponsor D",
+      "industry_ja": "小売・ショッピング",
+      "industry_en": "Retail",
+      "description_ja": "地元産品を通じて、沖縄の文化と産業を応援しています。",
+      "description_en": "Supporting Okinawan culture and industry through locally made products.",
+      "logoUrl": "",
+      "siteUrl": ""
+    },
+    {
+      "name": "Community Sponsor E",
+      "industry_ja": "交通・移動",
+      "industry_en": "Transportation",
+      "description_ja": "観光客が安心して沖縄を移動できる環境づくりを支援しています。",
+      "description_en": "Supporting safe and comfortable travel experiences across Okinawa.",
+      "logoUrl": "",
+      "siteUrl": ""
+    },
+    {
+      "name": "Community Sponsor F",
+      "industry_ja": "IT・テクノロジー",
+      "industry_en": "IT & Technology",
+      "description_ja": "テクノロジーの力で地域観光をもっと身近なものにするサポートをしています。",
+      "description_en": "Using technology to make local tourism more accessible and enjoyable.",
+      "logoUrl": "",
+      "siteUrl": ""
+    },
+    {
+      "name": "Community Sponsor G",
+      "industry_ja": "教育・文化",
+      "industry_en": "Education & Culture",
+      "description_ja": "地域の文化や歴史を次の世代へ伝える活動を応援しています。",
+      "description_en": "Committed to passing down local culture and history to future generations.",
+      "logoUrl": "",
+      "siteUrl": ""
+    },
+    {
+      "name": "Community Sponsor H",
+      "industry_ja": "医療・健康",
+      "industry_en": "Healthcare & Wellness",
+      "description_ja": "旅行者と地域住民の健やかな交流を陰ながら支えています。",
+      "description_en": "Quietly supporting healthy connections between visitors and local residents.",
+      "logoUrl": "",
+      "siteUrl": ""
+    },
+    {
+      "name": "Community Sponsor I",
+      "industry_ja": "金融・保険",
+      "industry_en": "Finance & Insurance",
+      "description_ja": "地域観光の持続的な発展を財務面から支援しています。",
+      "description_en": "Supporting the sustainable development of regional tourism from a financial perspective.",
+      "logoUrl": "",
+      "siteUrl": ""
+    },
+    {
+      "name": "Community Sponsor J",
+      "industry_ja": "建設・不動産",
+      "industry_en": "Construction & Real Estate",
+      "description_ja": "沖縄の街づくりを通じて、訪れる人が心地よく過ごせる環境を整えています。",
+      "description_en": "Creating comfortable environments for visitors through community development in Okinawa.",
+      "logoUrl": "",
+      "siteUrl": ""
+    }
   ]
 }

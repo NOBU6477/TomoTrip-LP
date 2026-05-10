@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TomoTrip地域応援スポンサー | TomoTrip</title>
+  <meta name="description" content="TomoTripの取り組みを応援してくださる企業・団体のみなさまをご紹介します。">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="stylesheet" href="/styles.css">
+  <style>
+    /* ── Page-specific styles ── */
+    .sc-header {
+      background: var(--color-white);
+      border-bottom: 1px solid var(--color-gray-200);
+      padding: var(--spacing-md) 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .sc-header__inner {
+      display: flex;
+      align-items: center;
+      gap: var(--spacing-md);
+      max-width: var(--container-max-width);
+      margin: 0 auto;
+      padding: 0 var(--container-padding);
+    }
+    .sc-header__back {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.9rem;
+      color: var(--color-primary);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color var(--transition-fast);
+    }
+    .sc-header__back:hover { color: var(--color-primary-dark); }
+    .sc-header__logo {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--color-gray-900);
+      text-decoration: none;
+      margin-left: auto;
+    }
+    .sc-header__logo img { height: 32px; width: auto; }
+
+    .sc-hero {
+      background: linear-gradient(135deg, var(--color-primary-light) 0%, var(--color-white) 100%);
+      padding: var(--spacing-3xl) 0 var(--spacing-2xl);
+      text-align: center;
+    }
+    .sc-hero__badge {
+      display: inline-block;
+      background: var(--color-primary-light);
+      color: var(--color-primary-dark);
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 0.3rem 1rem;
+      border-radius: var(--radius-full);
+      margin-bottom: var(--spacing-md);
+      letter-spacing: 0.04em;
+    }
+    .sc-hero__title {
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      font-weight: 700;
+      color: var(--color-gray-900);
+      margin-bottom: var(--spacing-md);
+      line-height: 1.3;
+    }
+    .sc-hero__desc {
+      max-width: 600px;
+      margin: 0 auto;
+      color: var(--color-gray-600);
+      font-size: 0.97rem;
+      line-height: 1.9;
+    }
+
+    .sc-main {
+      padding: var(--spacing-3xl) 0 var(--spacing-4xl);
+    }
+    .sc-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--spacing-lg);
+    }
+    @media (max-width: 900px) {
+      .sc-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 560px) {
+      .sc-grid { grid-template-columns: 1fr; }
+    }
+
+    .sc-card {
+      background: var(--color-white);
+      border: 1px solid var(--color-gray-200);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-sm);
+      padding: var(--spacing-xl);
+      display: flex;
+      flex-direction: column;
+      gap: var(--spacing-md);
+      transition: box-shadow var(--transition-base), transform var(--transition-base);
+    }
+    .sc-card:hover {
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-2px);
+    }
+
+    .sc-card__logo-wrap {
+      width: 100%;
+      height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--color-gray-50);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+    }
+    .sc-card__logo {
+      max-width: 120px;
+      max-height: 56px;
+      object-fit: contain;
+    }
+    .sc-card__placeholder {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--color-gray-600);
+      text-align: center;
+      padding: 0 var(--spacing-sm);
+      line-height: 1.4;
+    }
+
+    .sc-card__industry {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--color-primary-dark);
+      background: var(--color-primary-light);
+      padding: 0.2rem 0.7rem;
+      border-radius: var(--radius-full);
+      align-self: flex-start;
+    }
+    .sc-card__name {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--color-gray-900);
+      line-height: 1.4;
+    }
+    .sc-card__desc {
+      font-size: 0.88rem;
+      color: var(--color-gray-600);
+      line-height: 1.75;
+      flex: 1;
+    }
+    .sc-card__btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      padding: 0.55rem 1.2rem;
+      border: 1.5px solid var(--color-primary);
+      color: var(--color-primary);
+      border-radius: var(--radius-full);
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background var(--transition-fast), color var(--transition-fast);
+      align-self: flex-start;
+    }
+    .sc-card__btn:hover {
+      background: var(--color-primary);
+      color: var(--color-white);
+    }
+    .sc-card__btn--disabled {
+      border-color: var(--color-gray-300);
+      color: var(--color-gray-300);
+      cursor: default;
+      pointer-events: none;
+    }
+
+    .sc-loading {
+      grid-column: 1 / -1;
+      text-align: center;
+      color: var(--color-gray-600);
+      padding: var(--spacing-2xl);
+      font-size: 0.95rem;
+    }
+    .sc-error {
+      grid-column: 1 / -1;
+      text-align: center;
+      color: var(--color-gray-600);
+      padding: var(--spacing-2xl);
+    }
+
+    .sc-footer {
+      background: var(--color-gray-50);
+      border-top: 1px solid var(--color-gray-200);
+      padding: var(--spacing-xl) 0;
+      text-align: center;
+    }
+    .sc-footer__text {
+      font-size: 0.82rem;
+      color: var(--color-gray-600);
+      margin-bottom: var(--spacing-sm);
+    }
+    .sc-footer__copy {
+      font-size: 0.78rem;
+      color: var(--color-gray-300);
+    }
+  </style>
+</head>
+<body>
+
+  <header class="sc-header">
+    <div class="sc-header__inner">
+      <a href="/" class="sc-header__back">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M19 12H5M5 12l7 7M5 12l7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        トップへ戻る
+      </a>
+      <a href="/" class="sc-header__logo">
+        <img src="/tomotrip-logo.png" alt="TomoTrip">
+        TomoTrip
+      </a>
+    </div>
+  </header>
+
+  <section class="sc-hero">
+    <div class="container">
+      <span class="sc-hero__badge">TomoTrip 地域応援スポンサー</span>
+      <h1 class="sc-hero__title">地域の観光と人のつながりを<br>応援してくださる企業のみなさま</h1>
+      <p class="sc-hero__desc">
+        TomoTripは、観光客と地域の人をつなぎ、沖縄の魅力をより深く体験してもらうためのサービスです。<br>
+        この取り組みを応援してくださる企業・団体のみなさまをご紹介します。
+      </p>
+    </div>
+  </section>
+
+  <main class="sc-main">
+    <div class="container">
+      <div class="sc-grid" id="sc-grid">
+        <p class="sc-loading">読み込み中…</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="sc-footer">
+    <div class="container">
+      <p class="sc-footer__text">掲載に関するお問い合わせは、TomoTripまでご連絡ください。</p>
+      <p class="sc-footer__copy">&copy; 2025 TomoTrip. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+  (function () {
+    'use strict';
+
+    function sanitizeUrl(raw) {
+      if (!raw || typeof raw !== 'string') return '';
+      try {
+        var u = new URL(raw);
+        if (u.protocol !== 'http:' && u.protocol !== 'https:') return '';
+        return u.href;
+      } catch (e) { return ''; }
+    }
+
+    function buildCard(sp) {
+      var card = document.createElement('article');
+      card.className = 'sc-card';
+
+      // Logo / placeholder
+      var logoWrap = document.createElement('div');
+      logoWrap.className = 'sc-card__logo-wrap';
+      var safeLogoUrl = sanitizeUrl(sp.logoUrl);
+      if (safeLogoUrl) {
+        var img = document.createElement('img');
+        img.src = safeLogoUrl;
+        img.alt = '';
+        img.className = 'sc-card__logo';
+        img.setAttribute('aria-hidden', 'true');
+        logoWrap.appendChild(img);
+      } else {
+        var ph = document.createElement('span');
+        ph.className = 'sc-card__placeholder';
+        ph.textContent = sp.name || '';
+        logoWrap.appendChild(ph);
+      }
+      card.appendChild(logoWrap);
+
+      // Industry tag
+      var industry = sp.industry_ja || '';
+      if (industry) {
+        var tag = document.createElement('span');
+        tag.className = 'sc-card__industry';
+        tag.textContent = industry;
+        card.appendChild(tag);
+      }
+
+      // Company name
+      var nameEl = document.createElement('h2');
+      nameEl.className = 'sc-card__name';
+      nameEl.textContent = sp.name || '';
+      card.appendChild(nameEl);
+
+      // Description
+      var desc = sp.description_ja || '';
+      if (desc) {
+        var descEl = document.createElement('p');
+        descEl.className = 'sc-card__desc';
+        descEl.textContent = desc;
+        card.appendChild(descEl);
+      }
+
+      // Website button
+      var safeSiteUrl = sanitizeUrl(sp.siteUrl);
+      var btn = document.createElement('a');
+      btn.className = 'sc-card__btn' + (safeSiteUrl ? '' : ' sc-card__btn--disabled');
+      btn.textContent = '公式サイトを見る';
+      if (safeSiteUrl) {
+        btn.href = safeSiteUrl;
+        btn.target = '_blank';
+        btn.rel = 'noopener noreferrer';
+      } else {
+        btn.setAttribute('aria-disabled', 'true');
+        btn.setAttribute('role', 'link');
+      }
+      card.appendChild(btn);
+
+      return card;
+    }
+
+    var grid = document.getElementById('sc-grid');
+
+    fetch('/data/sponsor-companies.json')
+      .then(function (res) {
+        if (!res.ok) throw new Error(res.status);
+        return res.json();
+      })
+      .then(function (data) {
+        var sponsors = Array.isArray(data.jp) ? data.jp : [];
+        grid.innerHTML = '';
+        if (sponsors.length === 0) {
+          var empty = document.createElement('p');
+          empty.className = 'sc-error';
+          empty.textContent = '現在、掲載中のスポンサーはありません。';
+          grid.appendChild(empty);
+          return;
+        }
+        var frag = document.createDocumentFragment();
+        sponsors.forEach(function (sp) { frag.appendChild(buildCard(sp)); });
+        grid.appendChild(frag);
+      })
+      .catch(function () {
+        grid.innerHTML = '';
+        var err = document.createElement('p');
+        err.className = 'sc-error';
+        err.textContent = '情報の読み込みに失敗しました。しばらくしてからご確認ください。';
+        grid.appendChild(err);
+      });
+  }());
+  </script>
+</body>
+</html>
