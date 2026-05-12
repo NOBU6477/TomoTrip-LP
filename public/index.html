@@ -150,7 +150,7 @@
           <svg class="btn__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M8 5v14l11-7z" fill="currentColor"/>
           </svg>
-          まずは30秒でイメージを見る
+          まずは動画でイメージを見る
         </button>
         
         <p class="hero-cta-card__note">観光客だけでなく、地元の方の参加もOKです 😊</p>
@@ -884,50 +884,53 @@
     <div class="modal__overlay" id="videoModalOverlay"></div>
     <div class="modal__content">
       <div class="modal__header">
-        <h3 class="modal__title">サービス紹介動画</h3>
+        <h3 class="modal__title">あなたに合ったTomoTripを動画で見る</h3>
         <button class="modal__close" id="closeVideoModal" aria-label="閉じる" data-testid="button-close-video-modal">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
           </svg>
         </button>
       </div>
-      <p class="modal__description">ご覧になりたい動画を選択してください</p>
+      <p class="modal__description">観光客・ガイド・協賛店、それぞれの使い方と魅力を動画でご紹介します。</p>
       <div class="modal__options">
-        <button class="option-card option-card--guide" data-video-url="https://www.youtube.com/watch?v=GUIDE_VIDEO_ID" data-testid="button-video-guide">
+        <!-- TODO: Replace TOURIST_VIDEO_ID with actual YouTube video URL -->
+        <a class="option-card option-card--tourist" href="https://www.youtube.com/watch?v=TOURIST_VIDEO_ID" target="_blank" rel="noopener noreferrer" data-testid="button-video-tourist">
           <div class="option-card__icon">
             <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
               <polygon points="10 8 16 12 10 16 10 8" fill="currentColor"/>
             </svg>
           </div>
-          <h4 class="option-card__title">ガイド向け</h4>
-          <p class="option-card__description">報酬の仕組みを解説</p>
-          <span class="video-duration">30秒</span>
-        </button>
-        
-        <button class="option-card option-card--tourist" data-video-url="https://www.youtube.com/watch?v=TOURIST_VIDEO_ID" data-testid="button-video-tourist">
+          <h4 class="option-card__title">ガイドブックにない日本を、地元の人と</h4>
+          <p class="option-card__description">街歩き・料理体験・文化体験など、地元ガイドと楽しむ旅を紹介</p>
+          <span class="video-duration">約1分</span>
+        </a>
+
+        <!-- TODO: Replace GUIDE_VIDEO_ID with actual YouTube video URL -->
+        <a class="option-card option-card--guide" href="https://www.youtube.com/watch?v=GUIDE_VIDEO_ID" target="_blank" rel="noopener noreferrer" data-testid="button-video-guide">
           <div class="option-card__icon">
             <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
               <polygon points="10 8 16 12 10 16 10 8" fill="currentColor"/>
             </svg>
           </div>
-          <h4 class="option-card__title">観光客向け</h4>
-          <p class="option-card__description">ガイド予約の流れを紹介</p>
-          <span class="video-duration">30秒</span>
-        </button>
-        
-        <button class="option-card option-card--sponsor" data-video-url="https://www.youtube.com/watch?v=SPONSOR_VIDEO_ID" data-testid="button-video-sponsor">
+          <h4 class="option-card__title">あなたの街が、誰かの旅になる</h4>
+          <p class="option-card__description">日常や得意なことを活かした、地元ガイドの始め方を紹介</p>
+          <span class="video-duration">約1分</span>
+        </a>
+
+        <!-- TODO: Replace SPONSOR_VIDEO_ID with actual YouTube video URL -->
+        <a class="option-card option-card--sponsor" href="https://www.youtube.com/watch?v=SPONSOR_VIDEO_ID" target="_blank" rel="noopener noreferrer" data-testid="button-video-sponsor">
           <div class="option-card__icon">
             <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
               <polygon points="10 8 16 12 10 16 10 8" fill="currentColor"/>
             </svg>
           </div>
-          <h4 class="option-card__title">協賛店向け</h4>
-          <p class="option-card__description">集客サポートの仕組み</p>
-          <span class="video-duration">30秒</span>
-        </button>
+          <h4 class="option-card__title">地域のお店と旅人をつなぐ</h4>
+          <p class="option-card__description">地元ガイドの紹介・サイト掲載・動画発信による接点づくりを紹介</p>
+          <span class="video-duration">約1分</span>
+        </a>
       </div>
     </div>
   </div>

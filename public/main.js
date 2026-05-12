@@ -118,10 +118,7 @@
   const videoOptionCards = document.querySelectorAll('#videoModal .option-card');
   videoOptionCards.forEach(card => {
     card.addEventListener('click', function() {
-      const videoUrl = this.getAttribute('data-video-url');
-      if (videoUrl) {
-        openVideoPlayer(videoUrl);
-      }
+      closeVideoModal();
     });
   });
 
