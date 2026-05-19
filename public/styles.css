@@ -2432,3 +2432,154 @@ body {
 .faq-item:not(details).is-open .faq-item__answer {
   display: block;
 }
+
+/* ─────────────────────────────────────────
+   旅友ガイド活動支援制度 Section
+───────────────────────────────────────── */
+.guide-support__intro {
+  max-width: 680px;
+  margin: 0 auto var(--spacing-2xl);
+  text-align: center;
+  color: var(--color-gray-700);
+  font-size: 0.97rem;
+  line-height: 1.85;
+}
+
+.guide-support__cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-2xl);
+}
+
+@media (min-width: 768px) {
+  .guide-support__cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.guide-support__card {
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-xl);
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow var(--transition-base), transform var(--transition-base);
+}
+
+.guide-support__card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-3px);
+}
+
+.guide-support__card-icon {
+  font-size: 2rem;
+  margin-bottom: var(--spacing-sm);
+  text-align: center;
+}
+
+.guide-support__card-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-gray-900);
+  margin-bottom: var(--spacing-xs);
+  text-align: center;
+}
+
+.guide-support__card-lead {
+  font-size: 0.82rem;
+  color: var(--color-gray-500);
+  text-align: center;
+  margin-bottom: var(--spacing-md);
+  line-height: 1.6;
+}
+
+.guide-support__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.guide-support__list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--color-gray-700);
+  line-height: 1.6;
+}
+
+.guide-support__list li::before {
+  content: '✓';
+  color: var(--color-primary);
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 0.05rem;
+}
+
+.guide-support__list--title li::before {
+  content: none;
+}
+
+.guide-support__connect {
+  max-width: 620px;
+  margin: 0 auto var(--spacing-xl);
+  text-align: center;
+  color: var(--color-gray-700);
+  font-size: 0.95rem;
+  line-height: 1.9;
+  background: var(--color-primary-light);
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-xl);
+}
+
+.guide-support__connect p + p {
+  margin-top: var(--spacing-md);
+}
+
+.guide-support__disclaimer {
+  max-width: 720px;
+  margin: var(--spacing-xl) auto var(--spacing-2xl);
+  font-size: 0.78rem;
+  color: var(--color-gray-500);
+  background: var(--color-gray-50);
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-md) var(--spacing-lg);
+  line-height: 1.75;
+}
+
+.guide-support__cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+  justify-content: center;
+}
+
+.guide-support__cta-btn {
+  min-width: 180px;
+}
+
+.guide-support__cta-btn--line {
+  background: #06C755;
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-full);
+  padding: 0.75rem 1.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background var(--transition-fast), transform var(--transition-fast);
+}
+
+.guide-support__cta-btn--line:hover {
+  background: #05b84c;
+  transform: translateY(-1px);
+}
