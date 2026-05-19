@@ -1,0 +1,214 @@
+これは TomoTrip-LP リポジトリ専用の指示です。
+App側リポジトリでは実行しないでください。
+
+日本語LPに追加した「旅友ガイド活動支援制度」と同じ内容を、英語LPにも対応してください。
+
+目的：
+日本語LPでは、上部テイザーボックスと詳細セクション「旅友ガイド活動支援制度」が正常に実装・公開確認済みです。
+英語LPにも同じ考え方で、外国人ユーザーにも自然に伝わる英語版の導線と詳細セクションを追加してください。
+
+対象ファイル：
+- public/en/index.html
+- public/styles.css
+必要に応じて、英語LP用のJSがある場合は確認のみしてください。
+既存導線やモーダルを壊さないでください。
+
+やってほしいこと：
+
+1. 英語LPのガイド向け説明セクション付近に、短い案内ボックスを追加してください。
+日本語LPのテイザーボックスと同じ役割です。
+
+追加場所：
+英語LP内の guide / local guide / audience / registration に関連するセクションの直後が望ましいです。
+日本語LPと近い構造があれば、同等の位置に追加してください。
+
+テイザーボックスのタイトル：
+We support local guide activities 🌺
+
+本文：
+TomoTrip values not only guiding travelers, but also local support actions such as responding to travelers’ “Things I want to do” posts, introducing local sponsor stores when it naturally fits the traveler’s needs, and sharing local places through SNS.
+
+After registering as a guide, your dashboard becomes your home base.
+From there, you can manage your profile, respond to traveler requests, make proposals, and build connections with local stores.
+
+リンク文言：
+Learn about the Guide Activity Support Program →
+
+リンク先：
+#guide-support-program-en
+
+2. 英語LPの中ほどに、詳細セクションを追加してください。
+日本語版の「旅友ガイド活動支援制度」に相当する英語版です。
+
+セクションid：
+id="guide-support-program-en"
+
+セクションタイトル：
+Guide Activity Support Program 🌺
+
+サブタイトル：
+TomoTrip supports guides who help travelers and local communities.
+
+導入文：
+TomoTrip has a Guide Activity Support Program to support local guide activities.
+
+This program is not only about guiding travelers. It also values actions that help local communities, such as introducing local sponsor stores, sharing local places through SNS, and making proposals based on sponsor store updates.
+
+Guides can build relationships with travelers, local stores, and the community while growing their activities through TomoTrip.
+
+3. 詳細セクションには、3つのカードを作ってください。
+
+カード1：
+Local Support Actions 🤝
+
+本文：
+Examples of local support actions include:
+
+- Guiding travelers
+- Responding to travelers’ “Things I want to do” posts
+- Introducing sponsor stores when it naturally fits the traveler’s needs
+- Using sponsor store updates in proposals
+- Sharing local stores and local spots through SNS
+- Introducing potential sponsor stores to TomoTrip
+- Providing kind support that may lead to traveler reviews and positive feedback
+
+カード2：
+Guide Titles 🎖️
+
+本文：
+Depending on guide activity, TomoTrip may display titles on guide profiles.
+
+Examples:
+- TomoTrip Guide 🌺
+- Local Experience Guide 🧭
+- Community Support Guide 🤝
+- SNS Support Guide 📱
+- First Sponsor Store Supporter 🌱
+- TomoTrip Ambassador 🌺
+
+カード3：
+Activity Support Benefits 🎁
+
+本文：
+Depending on activity and operational conditions, guides may be eligible for TomoTrip activity support benefits.
+
+Examples:
+- Guide title display on profile
+- Introduction on TomoTrip official pages
+- Introduction through TomoTrip official SNS
+- Participation in sponsor store projects
+- Video and SNS promotion support
+- Priority information about guide opportunities
+- Monthly activity support benefits or support funds
+- Campaign participation
+- Operational support from TomoTrip
+
+4. メリット説明ボックスを入れてください。
+
+本文：
+For travelers, TomoTrip helps them discover places recommended by local people.
+For sponsor stores, it creates opportunities to be introduced to travelers.
+For guides, it expands the ways they can be active in the local community.
+
+TomoTrip aims to be a friendly service that connects travelers, local guides, and local stores — like having a friend at your travel destination 🌺
+
+5. 注意書きを必ず入れてください。
+
+Disclaimer:
+Benefits, eligibility, timing, and support details are determined by TomoTrip operations. Not all activities qualify for benefits or support funds. TomoTrip does not guarantee specific income, results, or rewards.
+
+6. CTAボタンを3つ設置してください。
+
+Button 1:
+Register as a Guide
+Link:
+https://app.tomotrip.com/guide-registration-v2-en.html
+もし英語ガイド登録ページが存在しない場合は、既存の英語ガイド登録導線に合わせてください。
+
+Button 2:
+View the Guide Manual
+Link:
+/guide-manual-en.html
+まだ未作成の場合は仮リンクでOKです。後でPDFまたはHTMLマニュアルに差し替えやすいようにHTMLコメントを残してください。
+
+Button 3:
+Contact us on LINE
+Link:
+https://lin.ee/rsHMnPA
+
+7. 英語版でも禁止表現を避けてください。
+
+Do not use:
+- dividend
+- investment
+- return on investment
+- yield
+- guaranteed income
+- guaranteed revenue
+- passive income
+- automatic income
+- lifetime reward
+- permanent reward
+- referral reward
+- referral commission
+- commission guarantee
+- guaranteed payout
+- 5,000 yen
+- ¥5,000
+
+Use safer wording:
+- Guide Activity Support Program
+- local support actions
+- activity support benefits
+- support funds
+- guide titles
+- may be eligible
+- depending on operational conditions
+- TomoTrip operations will determine eligibility
+- no specific income or result is guaranteed
+
+8. デザイン：
+日本語LPと同じデザインルールに合わせてください。
+既存 styles.css の .guide-support / teaser 系スタイルを流用できる場合は流用してください。
+英語文が長くなるため、スマホで文字が詰まりすぎないようにしてください。
+
+9. 既存導線を壊さないでください。
+
+変更しないもの：
+- English hero section
+- Tourist links
+- Guide registration links except where needed for the new CTA
+- Sponsor links
+- LINE links
+- Language switch
+- Footer
+- Legal links
+- Existing modals
+- Existing JS behavior
+
+10. 確認項目：
+
+- public/en/index.html が正常に表示される
+- 上部テイザーボックスが英語LPに表示される
+- “Learn about the Guide Activity Support Program →” を押すと #guide-support-program-en へ移動する
+- 詳細セクションが英語LPに表示される
+- PC表示で崩れていない
+- スマホ表示で崩れていない
+- Register as a Guide のリンクが正しい
+- View the Guide Manual は仮リンクでも問題ない状態
+- LINEリンクが正しい
+- コンソールに赤いJSエラーがない
+- 新規追加部分に禁止表現がない
+- 日本語LPに影響がない
+
+最後に以下を報告してください。
+
+- 変更したファイル
+- 英語版テイザーボックスの追加場所
+- 英語版詳細セクションのid
+- CTAリンク先
+- PC表示確認結果
+- スマホ表示確認結果
+- 禁止表現チェック結果
+- 日本語LPへの影響有無
+- Vercelへ反映してよい状態か
