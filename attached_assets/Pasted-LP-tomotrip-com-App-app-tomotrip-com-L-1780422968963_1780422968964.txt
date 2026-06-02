@@ -1,0 +1,119 @@
+LP側 tomotrip.com のフッター法務リンク整理をお願いします。
+
+前提：
+App側 app.tomotrip.com の法務リンク・英語版フッター整理は完了しています。
+今回は LP側 tomotrip.com のみを対象にしてください。
+app.tomotrip.com 側、Replitアプリ本体、DB、API、予約、チャット、管理画面には触らないでください。
+
+現在の問題：
+LP側 tomotrip.com のフッターにある法的事項のリンクを押すと、法務ページに遷移せず、トップページ上部へスクロールされるように見えます。
+href="#" や未実装モーダル、古いリンク、存在しないファイル参照になっている可能性があります。
+
+目的：
+LP側フッターの法務リンクを、App側で整備済みの独立法務ページへ正しく接続し、トップへ戻るだけのリンクや古いモーダル参照をなくしたいです。
+
+重要：
+- 対象は LP側 tomotrip.com のフッターです。
+- app.tomotrip.com 側のコードは触らないでください。
+- DB / API / 認証 / 予約 / チャット / 管理画面には触らないでください。
+- 法務本文の大幅変更はしないでください。
+- 既存デザイン、CTA、ヒーロー、登録導線、OGP、SNS導線は壊さないでください。
+- まず調査してから、必要最小限のリンク修正をしてください。
+
+調査してほしいこと：
+
+1. LP側フッターの法務リンク一覧を出してください。
+   - 表示名
+   - 現在の href
+   - onclick の有無
+   - 実際に遷移するか
+   - href="#" になっていないか
+   - トップへスクロールされるだけになっていないか
+   - 存在しないファイルを参照していないか
+
+2. 以下の項目がある場合、それぞれのリンク先を確認してください。
+   - 利用規約
+   - プライバシーポリシー
+   - 特定商取引法
+   - ガイドライン
+   - キャンセルポリシー
+   - Cookie Policy
+   - Terms of Service
+   - Privacy Policy
+
+3. App側の既存法務ページを参照できるか確認してください。
+   想定リンク先：
+   - 利用規約： https://app.tomotrip.com/terms.html
+   - プライバシーポリシー： https://app.tomotrip.com/privacy.html
+   - 特定商取引法： https://app.tomotrip.com/tokushoho.html
+   - ガイド活動規約： https://app.tomotrip.com/guide-terms.html
+   - 協賛店規約： https://app.tomotrip.com/sponsor-terms.html
+   - キャンセルポリシー： https://app.tomotrip.com/cancel-policy.html
+
+4. 英語版LPがある場合は、英語版フッターも確認してください。
+   想定リンク先：
+   - Terms of Service： https://app.tomotrip.com/terms-en.html
+   - Privacy & Cookies： https://app.tomotrip.com/privacy-en.html
+   - Cancellation Policy： https://app.tomotrip.com/cancel-policy-en.html
+   - Guide Terms： https://app.tomotrip.com/guide-terms-en.html
+   - Sponsor Terms： https://app.tomotrip.com/sponsor-terms-en.html
+   ※ tokushoho-en.html は存在しない可能性があるため、勝手に作成しないでください。
+   英語版の特商法リンクが必要な場合は、日本語 tokushoho.html へ暫定接続するか、リンクを出さない方針を提案してください。
+
+修正方針：
+
+A. 日本語LPフッター
+以下のように外部URLで App側の独立法務ページへ接続してください。
+- 利用規約 → https://app.tomotrip.com/terms.html
+- プライバシーポリシー → https://app.tomotrip.com/privacy.html
+- 特定商取引法 → https://app.tomotrip.com/tokushoho.html
+- ガイドライン、またはガイド活動規約 → https://app.tomotrip.com/guide-terms.html
+- キャンセルポリシー → https://app.tomotrip.com/cancel-policy.html
+
+B. 英語LPフッター
+英語版がある場合は以下へ接続してください。
+- Terms of Service → https://app.tomotrip.com/terms-en.html
+- Privacy & Cookies → https://app.tomotrip.com/privacy-en.html
+- Cancellation Policy → https://app.tomotrip.com/cancel-policy-en.html
+- Guide Terms → https://app.tomotrip.com/guide-terms-en.html
+- Sponsor Terms → https://app.tomotrip.com/sponsor-terms-en.html
+
+C. href="#" や未実装onclick
+法務リンクで href="#" や onclick だけに依存してトップへ戻るものは修正してください。
+法務リンクは原則、独立ページへ遷移する形にしてください。
+
+D. 新規ページ作成について
+今回は新規法務ページを勝手に作らないでください。
+存在しないページが必要な場合は、最終報告で「未作成・次回対応」としてください。
+
+確認項目：
+
+1. 日本語LPフッターの利用規約が app.tomotrip.com/terms.html に開く
+2. プライバシーポリシーが app.tomotrip.com/privacy.html に開く
+3. 特定商取引法が app.tomotrip.com/tokushoho.html に開く
+4. ガイドラインまたはガイド活動規約が app.tomotrip.com/guide-terms.html に開く
+5. キャンセルポリシーが app.tomotrip.com/cancel-policy.html に開く
+6. href="#" でトップへ戻るだけの法務リンクが残っていない
+7. onclickだけに依存する古いモーダル法務リンクが残っていない
+8. 存在しないファイルへのリンクがない
+9. 英語版LPがある場合、英語法務リンクも英語ページへ接続されている
+10. スマホ表示でフッターが崩れていない
+11. コンソールエラーなし
+12. 既存CTA・登録導線・SNSリンク・OGPに影響なし
+
+最終報告でほしいこと：
+
+1. 結論
+2. 対象ファイル
+3. 修正前のLPフッター法務リンク一覧
+4. 修正後のLPフッター法務リンク一覧
+5. href="#" や古いonclickが残っていないか
+6. 存在しないリンクがないか
+7. 英語版LPの確認結果
+8. 変更していない範囲
+9. デプロイ/公開反映が必要か
+10. 本番確認手順
+
+注意：
+今回の目的は LP側 tomotrip.com の法務リンクを、すでに整備済みの app.tomotrip.com 法務ページへ正しく接続することです。
+App本体、管理画面、DB、API、予約、チャット、決済には触らないでください。
