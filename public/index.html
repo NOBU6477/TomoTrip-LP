@@ -253,6 +253,22 @@
       </div>
     </section>
 
+    <!-- Service Trust Banner -->
+    <section class="section" id="about-service" style="padding: 2rem 0; background: #f0f9f4; border-top: 3px solid #00b894; border-bottom: 3px solid #00b894;">
+      <div class="container">
+        <p style="font-size: 0.85rem; font-weight: 700; color: #00b894; margin-bottom: 0.5rem; letter-spacing: 0.05em;">TomoTripとは</p>
+        <p style="font-size: 1.1rem; font-weight: 700; color: #1a1a1a; margin-bottom: 1rem; line-height: 1.6;">
+          本人確認済みの地域ガイドと観光客をつなぐ、<br>地域観光体験の予約プラットフォームです。
+        </p>
+        <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
+          <span style="background: #fff; border: 1px solid #00b894; border-radius: 999px; padding: 0.3rem 0.9rem; font-size: 0.85rem; color: #00b894; font-weight: 600;">✅ 運営審査済みガイドのみ公開</span>
+          <span style="background: #fff; border: 1px solid #00b894; border-radius: 999px; padding: 0.3rem 0.9rem; font-size: 0.85rem; color: #00b894; font-weight: 600;">✅ 体験内容・料金・キャンセル条件を事前に確認</span>
+          <span style="background: #fff; border: 1px solid #00b894; border-radius: 999px; padding: 0.3rem 0.9rem; font-size: 0.85rem; color: #00b894; font-weight: 600;">✅ サイト内で予約・決済が完結</span>
+          <span style="background: #fff; border: 1px solid #00b894; border-radius: 999px; padding: 0.3rem 0.9rem; font-size: 0.85rem; color: #00b894; font-weight: 600;">✅ 現地での直接支払いは不要</span>
+        </div>
+      </div>
+    </section>
+
     <!-- Audience Tabs Section -->
     <section class="section section--light" id="audience">
       <div class="container">
@@ -264,9 +280,7 @@
           <button class="tab" role="tab" aria-selected="true" aria-controls="panel-student" id="tab-student" data-audience="student" data-testid="tab-student">
             学生向け
           </button>
-          <button class="tab" role="tab" aria-selected="false" aria-controls="panel-night" id="tab-night" data-audience="night" data-testid="tab-night">
-            夜職向け
-          </button>
+
           <button class="tab" role="tab" aria-selected="false" aria-controls="panel-homemaker" id="tab-homemaker" data-audience="homemaker" data-testid="tab-homemaker">
             主婦・個人事業主向け
           </button>
@@ -319,55 +333,6 @@
                   </summary>
                   <div class="faq-item__answer">
                     はい、完全に可能です。プランの受付時間や曜日は自由に設定できるため、試験期間中は休止するなど、柔軟に調整できます。多くの学生ガイドが無理なく活動しています。
-                  </div>
-                </details>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Night Work Panel -->
-          <div class="tab-panel" role="tabpanel" id="panel-night" aria-labelledby="tab-night" hidden data-testid="panel-night">
-            <div class="tab-panel__content">
-              <div class="tab-panel__main">
-                <h3 class="tab-panel__title" data-i18n="audience.night.title">
-                  出勤前のひと仕事で、新しい働き方を。夜の街を昼も夜も案内
-                </h3>
-                <p class="tab-panel__text" data-i18n="audience.night.desc">
-                  「出勤前の夕方に2時間だけガイド→そのまま同伴出勤」「お昼は居酒屋でランチ案内、夜は本業」——TomoTripなら、あなたの生活スタイルに合わせた働き方が実現します。夜の街に詳しいあなただからこそ案内できる、隠れ家バー・おしゃれなディナースポット・ナイトクラブ情報は、大人の旅行者に大人気。居酒屋で一緒にお酒を楽しむプランや、ナイトライフ体験ツアーなど、他にはない価値を提供できます。¥6,000/セッション〜（目安）。夜の案内ならさらに高い料金設定も可能です。
-                </p>
-                <ul class="tab-panel__features">
-                  <li data-i18n="audience.night.feature1">
-                    <svg class="feature-icon" width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="currentColor"/>
-                    </svg>
-                    出勤前ガイド→同伴出勤も可。居酒屋で一緒にお酒を楽しむプランも人気
-                  </li>
-                  <li data-i18n="audience.night.feature2">
-                    <svg class="feature-icon" width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="currentColor"/>
-                    </svg>
-                    ¥6,000/セッション〜（目安）。ナイトライフ案内は時給換算¥4,000〜¥8,000+も目指せます
-                  </li>
-                  <li data-i18n="audience.night.feature3">
-                    <svg class="feature-icon" width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="currentColor"/>
-                    </svg>
-                    磨き抜かれた接客スキルと夜の街の知識が最大の武器
-                  </li>
-                </ul>
-              </div>
-              
-              <div class="tab-panel__faq">
-                <h4 class="tab-panel__faq-title">よくある質問</h4>
-                <details class="faq-item" data-testid="faq-night-1">
-                  <summary class="faq-item__question">
-                    身バレの心配はありませんか？
-                    <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                  </summary>
-                  <div class="faq-item__answer">
-                    プロフィールの公開範囲は自由に設定できます。顔写真なしでの登録や、ニックネームでの活動も可能です。プライバシー保護を最優先に設計されています。
                   </div>
                 </details>
               </div>
@@ -514,7 +479,7 @@
           
           <div class="compensation-card">
             <div class="compensation-card__header">
-              <h3 class="compensation-card__title" data-i18n="compensation.safety.title">同じ時間を、ちょっとだけ一緒に過ごす 🍻</h3>
+              <h3 class="compensation-card__title" data-i18n="compensation.safety.title">地元の人とふれる、リアルな地域体験</h3>
             </div>
             <div class="compensation-card__content">
               <p class="compensation-card__text" data-i18n="compensation.safety.desc">
@@ -1142,6 +1107,11 @@
       <div class="footer__bottom">
         <p class="footer__copyright footer__notice">
           ※本サービスは体験の共有を目的としており、<br>個人的な出会いを目的とした利用は禁止しています。
+        </p>
+        <p class="footer__copyright footer__notice" style="margin-top:0.5rem; font-size:0.78rem; color:#888; line-height:1.7;">
+          【ご利用上の禁止事項】性的サービス・違法行為・外部決済・現地での直接支払い・個人的な出会いや同伴を目的とした利用は固く禁止します。
+          ガイドは運営審査を経て公開されます。体験内容・料金・キャンセル条件はご予約前にアプリ内でご確認ください。
+          ガイドへの報酬はTomoTrip経由の決済のみで支払われ、現地での金銭授受はご遠慮いただいています。
         </p>
         <p class="footer__copyright" data-i18n="footer.copyright">
           &copy; 2025 TomoTrip. All rights reserved.
