@@ -1,0 +1,102 @@
+LP側フッターの日本語版・英語版を目視確認しました。
+
+次は、決済会社審査向けに、LP側フッターの法務リンクを整理してください。
+
+今回の目的：
+決済会社審査担当者が `tomotrip.com` / `tomotrip.com/en/` から、App側の実体法務ページへ迷わず到達できるようにすること。
+
+対象：
+LP側リポジトリの日本語LP・英語LPフッター
+想定ファイル：
+
+* public/index.html
+* public/index-en.html
+  または現在LPで使われている該当HTMLファイル
+
+今回実施してよい範囲：
+
+1. 日本語LPフッター「法的事項」のリンクを整理
+2. 英語LPフッター「Legal」のリンクを整理
+3. 既存のCTA・LINE導線・YouTube導線・OGP・ヒーロー・本文・CSS・JSは変更しない
+4. App側 `app.tomotrip.com` は変更しない
+5. Vercel本番反映はまだしない
+
+日本語LPフッターの推奨リンク：
+
+* 利用規約 → https://app.tomotrip.com/terms.html
+* プライバシーポリシー → https://app.tomotrip.com/privacy.html
+* 特定商取引法 → https://app.tomotrip.com/tokushoho.html
+* ガイドライン → https://app.tomotrip.com/guidelines.html
+* ガイド活動規約 → https://app.tomotrip.com/guide-terms.html
+* キャンセルポリシー → https://app.tomotrip.com/cancel-policy.html
+
+重要：
+現在「ガイドライン」が `guide-terms.html` に接続されている場合は、`guidelines.html` に変更してください。
+`guide-terms.html` は別リンク「ガイド活動規約」として追加してください。
+
+英語LPフッターの推奨リンク：
+
+* Terms of Service → https://app.tomotrip.com/terms-en.html
+* Privacy & Cookies → https://app.tomotrip.com/privacy-en.html
+* Community Guidelines → https://app.tomotrip.com/guidelines-en.html
+* Guide Activity Terms → https://app.tomotrip.com/guide-terms-en.html
+* Sponsor Terms → https://app.tomotrip.com/sponsor-terms-en.html
+* Cancellation Policy → https://app.tomotrip.com/cancel-policy-en.html
+* Legal Notice / Specified Commercial Transactions Act → https://app.tomotrip.com/tokushoho-en.html
+
+英語LPでは、特に以下2つを必ず追加してください：
+
+* Community Guidelines
+* Legal Notice / Specified Commercial Transactions Act
+
+確認してほしいこと：
+
+1. 日本語LPフッターの各リンクがApp側の実体ページへ遷移すること
+2. 英語LPフッターの各リンクがApp側の英語実体ページへ遷移すること
+3. 各リンク先がSPAフォールバックではなく、正しい本文ページを表示すること
+4. 日本語LP・英語LPのフッター表示が崩れていないこと
+5. 既存のCTA・LINE導線・YouTube導線・OGP・ヒーロー・本文に影響がないこと
+6. 決済審査NG語句がLP側に残っていないこと
+
+検索してほしいNG語句：
+
+* 夜職
+* 同伴
+* ナイトライフ
+* Certified
+* Compliant
+* ISO 27001
+* PCI DSS
+* Japan Tourism Agency
+* Payment Services Act
+* Tourism Business Act
+* 監査済み
+* 認定済み
+* 準拠済み
+
+今回やらないこと：
+
+* App側の変更
+* DB変更
+* API変更
+* 管理画面変更
+* 決済機能変更
+* 観光客側決済導線
+* 実決済会社接続
+* Webhook
+* Vercel本番反映
+* 決済会社申請
+
+報告してほしいこと：
+
+* 変更したファイル一覧
+* 日本語LPフッターの変更内容
+* 英語LPフッターの変更内容
+* 追加・修正したリンク一覧
+* リンク先の実体表示確認結果
+* NG語句検索結果
+* 既存LP表示への影響がないこと
+* コードレビュー結果
+
+今回はLP側フッター法務リンクの整理までで停止してください。
+Vercel本番反映・決済会社申請にはまだ進まないでください。
