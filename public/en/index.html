@@ -546,8 +546,13 @@
       </div>
       <script>
         (function () {
+          function toHalf(s) {
+            return s
+              .replace(/[\uFF01-\uFF5E]/g, function (c) { return String.fromCharCode(c.charCodeAt(0) - 0xFEE0); })
+              .replace(/[\u2010\u2011\u2012\u2013\u2014\u30FC\u2212\uFF70]/g, '-');
+          }
           function normalizeGuideId(raw) {
-            var s = raw.trim().toUpperCase().replace(/\s/g, '');
+            var s = toHalf(raw.trim()).trim().toUpperCase().replace(/\s/g, '');
             if (/^TG-\d{4}$/.test(s)) return s;
             var m = s.match(/^TG-?(\d{4})$/);
             if (m) return 'TG-' + m[1];
