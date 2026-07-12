@@ -526,15 +526,57 @@
     <!-- Guide Card section -->
     <section id="guide-card-section" style="background:#e8f7fb;padding:2.5rem 1rem;">
       <div style="max-width:680px;margin:0 auto;background:#fff;border:2px solid #00b4d8;border-radius:16px;padding:2rem 2rem 1.75rem;box-shadow:0 2px 12px rgba(0,180,216,0.10);">
-        <p style="font-size:1.4rem;font-weight:700;color:#0077b6;margin:0 0 0.75rem;line-height:1.4;">🪪 For Those with a Guide Card</p>
-        <p style="font-size:1rem;color:#333;margin:0 0 0.5rem;line-height:1.7;">Please tell us the <strong>Guide ID</strong> printed on your card so we can connect you with the right local guide.</p>
-        <p style="font-size:0.9rem;color:#666;margin:0 0 1.25rem;">Example: <code style="background:#f0f9ff;border:1px solid #bae6fd;border-radius:4px;padding:0.1rem 0.4rem;font-family:monospace;">TG-0047</code></p>
-        <a href="https://lin.ee/rsHMnPA?source=guide-card" target="_blank" rel="noopener noreferrer"
-           style="display:inline-block;background:#00b4d8;color:#fff;font-weight:700;font-size:1rem;padding:0.75rem 1.75rem;border-radius:999px;text-decoration:none;transition:background 0.2s;"
-           onmouseover="this.style.background='#0077b6'" onmouseout="this.style.background='#00b4d8'">
-          Contact us with your Guide ID
-        </a>
+        <p style="font-size:1.4rem;font-weight:700;color:#0077b6;margin:0 0 1rem;line-height:1.4;">🪪 For Guide Card Holders</p>
+        <label for="gc-id-input-en" style="display:block;font-size:0.95rem;font-weight:600;color:#333;margin-bottom:0.5rem;">Enter the Guide ID shown on the card.</label>
+        <div style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-bottom:0.4rem;">
+          <input id="gc-id-input-en" type="text" placeholder="Example: TG-0047"
+                 style="flex:1;min-width:140px;font-size:1rem;font-family:monospace;padding:0.65rem 1rem;border:2px solid #b0d8f0;border-radius:8px;outline:none;box-sizing:border-box;"
+                 maxlength="10" autocomplete="off" spellcheck="false" inputmode="text">
+          <button id="gc-id-btn-en" type="button"
+                  style="background:#00b4d8;color:#fff;font-weight:700;font-size:0.95rem;padding:0.65rem 1.25rem;border:none;border-radius:8px;cursor:pointer;white-space:nowrap;transition:background 0.2s;"
+                  onmouseover="this.style.background='#0077b6'" onmouseout="this.style.background='#00b4d8'">
+            View Guide Profile
+          </button>
+        </div>
+        <p id="gc-id-error-en" style="display:none;color:#c0392b;font-size:0.875rem;margin:0.25rem 0 0.5rem;">Please check the Guide ID. Example: TG-0047</p>
+        <p style="font-size:0.83rem;color:#999;margin:1rem 0 0;line-height:1.6;">
+          If you need help, contact us on
+          <a href="https://lin.ee/rsHMnPA" target="_blank" rel="noopener noreferrer" style="color:#00b4d8;text-decoration:underline;">LINE</a>.
+        </p>
       </div>
+      <script>
+        (function () {
+          function normalizeGuideId(raw) {
+            var s = raw.trim().toUpperCase().replace(/\s/g, '');
+            if (/^TG-\d{4}$/.test(s)) return s;
+            var m = s.match(/^TG-?(\d{4})$/);
+            if (m) return 'TG-' + m[1];
+            if (/^\d{4}$/.test(s)) return 'TG-' + s;
+            return null;
+          }
+          var btn = document.getElementById('gc-id-btn-en');
+          var inp = document.getElementById('gc-id-input-en');
+          var err = document.getElementById('gc-id-error-en');
+          function go() {
+            var id = normalizeGuideId(inp.value);
+            if (!id) {
+              err.style.display = 'block';
+              inp.style.borderColor = '#e74c3c';
+              inp.focus();
+              return;
+            }
+            err.style.display = 'none';
+            inp.style.borderColor = '#b0d8f0';
+            window.open('https://app.tomotrip.com/g/' + id + '?source=lp-guide-id', '_blank');
+          }
+          btn.addEventListener('click', go);
+          inp.addEventListener('keydown', function (e) { if (e.key === 'Enter') go(); });
+          inp.addEventListener('input', function () {
+            err.style.display = 'none';
+            inp.style.borderColor = '#b0d8f0';
+          });
+        })();
+      </script>
     </section>
 
     <!-- TomoTrip Community Support Sponsors -->
