@@ -1,5 +1,12 @@
 {
   "outputDirectory": "public",
+  "redirects": [
+    {
+      "source": "/t/:code",
+      "destination": "https://app.tomotrip.com/t/:code",
+      "permanent": false
+    }
+  ],
   "headers": [
     {
       "source": "/",
